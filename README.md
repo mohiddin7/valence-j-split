@@ -15,10 +15,24 @@ This builds on two papers:
 | :--- | :--- | :--- | :--- |
 | 0 | Load the model and lens, check the lens, measure speed | none | Done |
 | 1 | How much of the valence direction the lens can read | none | Done |
-| 2 | Gate: reproduce the zone-choice effect with the full vector | yes | Not started |
+| 2 | Gate: reproduce the zone-choice effect with the full vector | yes | Done: failed at layer 16, partly reproduced at layers 9 and 12 |
 | 3 | Readable part against remainder, on choice and on text | yes | Not started |
 
-No steering experiment has been run yet. The tag `protocol-v1` dates the protocol before stage 2.
+The tag `protocol-v1` dates the protocol before stage 2. Later sections of the protocol (9a to 9c) were each written before the run they describe.
+
+## Stage 2 result
+
+All numbers are changes in the choice margin (log probability of the steered zone's label minus the other's) per unit dose. One rebuilt vector, one seed.
+
+- **The paper's effect does not appear at its layer.** At layer 16 with all tokens steered, the slope is −0.115 (300 sessions), inside the range of 24 random directions. Steering only the zone descriptions at layer 16 gives −0.005.
+- **Choice order matters.** With no steering the model favours the zone named second (margin −0.63 against +1.40). I read every session under both orders from the second pilot on.
+- **Steering the descriptions toward negative valence at layers 9 and 12 makes the model avoid the zone.** On 200 held-out sessions in float32 the change at dose −1 is −2.09 (layer 9) and −1.80 (layer 12), below all 68 control cells (24 random directions and 10 neutral principal components, two signs).
+- **Positive steering does not make it seek the zone:** at most +0.22, at half dose at layer 9.
+- **Pre-stated criterion** (sign-dependent effect above zero in both orders and larger than each of 24 random directions): passed at layer 12 (+0.65 against 0.60), failed at layer 9 on the primary set (+1.03 against 1.22). Some neutral components have sign-dependent effects as large.
+- **At layers 20 and 24 the sign is reversed**, mostly through the tokens of the zone's name.
+- **The sign-independent drop at layer 16 and above is damage:** neutral principal components cause the same drop.
+- **A full dose is far outside natural variation:** about 6 times the distance between positive and negative passages, and 15 to 35 times the difference between two zone descriptions. Swapping the zones' natural difference along the valence direction at layer 9 moves the choice in the same direction with the same strength per unit, but by about 3% of a typical margin.
+- **Steering several layers at once does not add:** one dose split across layers 9 to 12 acts like one dose at a single layer.
 
 ## Stage 1 result
 
@@ -44,7 +58,8 @@ Limits: one passage corpus, one seed, and a valence vector I rebuilt from the pa
 
 - `PROTOCOL.md`: the design, fixed parameters, arms, predictions and limits.
 - `data/passages/`: 544 short first-person passages (8 affective states and neutral) used to build the valence vector, with the spec they were written to.
-- `experiment/stage0_lens_check.py`, `experiment/stage1_readable_share.py`: the code.
+- `experiment/stage0_lens_check.py`, `experiment/stage1_readable_share.py`: the code for stages 0 and 1.
+- `experiment/stage2_choice.py` (transcripts, gradient map, first pilot, gate), `experiment/stage2_positions.py` (steering by token position), `experiment/stage2_confirm.py` (confirmatory run, layer combinations, swap and ablate): the code for stage 2.
 - `experiment/results/`: outputs of each run.
 
 ## Running it

@@ -1,8 +1,10 @@
 # Protocol
 
-Version 1, 2026-11-14.
+Version 2, 2026-11-15. Version 1 is the tag `protocol-v1`.
 
 **What this document dates.** I ran stages 0 and 1 (no steering) on 2026-11-14, before this repository existed. I wrote the split choices in section 5 before stage 1 ran, but I have no public record of that. The first public commit of this file therefore dates everything from stage 2 onward: no steering experiment had been run when it was made.
+
+**Version 2.** I wrote the changes in section 9a on 2026-11-15, before any steering run. Their commit may be later than the runs they govern, so the tag `protocol-v1` remains the only third-party date. Section 15 lists what changed.
 
 ## 1. Question
 
@@ -62,6 +64,7 @@ Estimators:
 1. **Non-negative sparse code**, 16 and 25 tokens: greedy selection with a non-negative least-squares refit. The refit makes the readable part and the remainder orthogonal. +v and −v get different codes, so positive doses inject the code of +v and negative doses inject the code of −v.
 2. **Signed sparse code** on the same dictionary, 25 and 100 tokens. This gives one vector for both signs.
 3. Both estimators on the **J++ and R lens** dictionaries.
+4. Secondary: a **signed code restricted to the tokens chosen by the two non-negative codes**. It gives one axis for both signs, at the cost of leaving the non-negative definition.
 
 ## 6. Conditions
 
@@ -77,14 +80,15 @@ Estimators:
 | H | 24 random readable directions (random lens tokens, non-negative weights) | same two norms | Is any word-like direction enough? |
 | I | v minus a random piece of J's norm, 24 draws | natural | Control for arm D |
 | S | contrasts between two states of the same valence | matched to v | A real contrast that is not valence |
-| T | arms A, C and D with steering on while the model writes | full dose, 50 sessions | Text channel: the case where the readable part should win |
+| T | arms A, B, C, D and H with steering on while the model writes | 50 sessions | Text channel: the case where the readable part should win |
 
 Doses: −1, −0.5, 0, +0.5, +1 for arms A to F. Arms G, H, I, S and T run at −1 and +1 only. Positive and negative doses are analysed separately (see section 10).
 
 ## 7. Outcomes
 
 - **Primary:** slope of choice margin on dose, with a bootstrap interval over sessions, as in the paper. I also report the area under the dose curve.
-- **Text channel (arm T):** valence of the generated zone descriptions, scored by a judge model with the paper's prompt (its Appendix C) and by a count from a fixed word list.
+- **Text channel (arm T):** first, the choice margin after reprocessing the steered text without steering, as in the paper's section 3.2.1. This puts text and hidden state in the same unit. Second, the valence of the generated descriptions, scored by a judge model with the paper's prompt (its Appendix C) and by a count from a fixed word list. Arm T reports two contrasts: effect per unit norm (C against H) and removal at natural size (A against D).
+- **Keys and values:** for each arm, how much the injection changes the attention keys and the attention values that later positions read. The paper finds keys carry most of the effect in this model.
 - **Lens check:** after each injection, the lens readout at later layers. The readable arm should shift valence words; the remainder should shift them less.
 - **Self-report (secondary, descriptive only):** a 1 to 7 rating of each zone read from digit logits, on a separate branch of the cache so it cannot disturb the choice. Martorell and Bianchi (arXiv 2603.18893, version 3) caution against numeric self-report as a measure of internal states, so I draw no conclusion from it alone.
 
@@ -108,11 +112,60 @@ Each stage gives a result I can report even if the next one fails.
 | :--- | :--- | :--- | :--- |
 | 0 | Load model and lenses; check the lens; measure speed | none | Done |
 | 1 | Readable share of the valence, emotion and pain vectors: three lenses, layers 15, 16, 20, 24 and 28, two estimators, 200 draws per baseline | none | Done |
-| 2 | Gate: arm A. First a 50-session pilot at layers 12, 16, 20 and 24, doses −1 and +1; then 300 sessions at layer 16 | yes | Not started |
+| 2a | Transcripts and gradient map (section 9a) | none | Not started |
+| 2b | Gate: arm A. A 50-session pilot at layers 12, 16, 20 and 24, doses −1 and +1; then 300 sessions at layer 16; then an exploratory grid (section 9a) | yes | Not started |
 | 3 | Arms B to I, S and T | yes | Not started |
 | 4 | Optional: downstream clamp; pain and welfare-axis vectors; the ambiguity-resolution test proposed by Williams (arXiv 2610.36962) | yes | Not started |
 
 **Layer.** Layer 16 is the paper's choice (the middle layer), and it stays the primary layer so the gate is a fair test of their result. The pilot at four layers shows whether that choice is fragile. If I use another layer for stage 3, I will report it as a deviation, with the pilot numbers.
+
+## 9a. Stage 2 in detail
+
+**Transcripts.** 300 sessions. Each draws two of 12 zone labels; one is the conditioned zone. The model describes each zone six times, alternating, with the paper's prompt and a 70-token limit, sampling at temperature 0.6 and top-p 0.9. No steering. The paper names five of its 12 labels; the other seven are mine.
+
+**Transcript check, made before any gradient or steering run.** In 254 of 300 sessions the first reply opens with a disclaimer ("I'm not aware of any information about Zone T9", "I'm not capable of physically being in a location") before describing the zone, and 22 sessions disclaim in 8 or more of their 12 replies. About a fifth of all replies contain such wording. The descriptions also read as eerie or sterile, where the paper describes its fixed texts as mildly positive. I do not know whether the authors' setup differs. I keep the paper's prompt unchanged and all 300 sessions as the primary set, and I report every result again without the 22 heavy-disclaimer sessions.
+
+**Choice margin.** As in the paper: the log probability of the conditioned zone's label minus that of the other label, each summed over the label's tokens, after the choice prompt.
+
+**Gradient map (no steering).** For each session I take the gradient of the choice margin with respect to the residual stream at the conditioned zone's token positions, at every layer. Steering adds the same vector at all those positions, so the gradient summed over them, dotted with a direction, predicts that direction's first-order effect on the margin. This gives a prediction for every arm at every layer before any steering. I also ask whether the gradient itself is readable by the lens and whether it aligns with the valence vector.
+
+Early stopping: after at least 100 sessions, and then every 50, I compare the mean gradient at layer 16 over odd and even sessions. I stop when their cosine reaches 0.95, or at 300 sessions. The rule looks only at stability, never at the size or sign of any effect.
+
+The gradient map is a first-order prediction. Steering must confirm it.
+
+**Gate.** Arm A passes if, at layer 16 on 300 sessions, the slope of the margin on dose is positive, its bootstrap 95% interval excludes zero, and it is larger in size than the slope of each of the 24 random directions.
+
+**Exploratory grid.** After the gate: the valence vector, each of the eight states against neutral, two same-valence contrasts and four public emotion vectors, at layers 12, 16, 20 and 24, doses −1 and +1, 100 sessions each; and the two Pain Axis vectors at layer 28. Its purpose is to test the gradient map's predictions across many cells. It is exploratory: no conclusion rests on a single cell, and the primary contrasts in section 8 do not change.
+
+## 9b. Second pilot: where steering acts (written 2026-11-15, before it ran)
+
+The gate failed: at layer 16 the slope of the margin on dose was −0.115, inside the range of the random directions. Three things found afterwards, without new steering, make that number hard to read:
+
+- **Choice order.** The slope is −0.255 in the 123 sessions that list the conditioned zone first in the choice prompt and −0.018 in the 177 that list it second. My draw did not balance the order.
+- **Position.** From layer 11 on, the zone descriptions carry under 1% of the gradient of the choice. At layers 17 to 29 most of the predicted valence effect comes from the 12 tokens of the zone's name.
+- **Any steering lowers the choice of the steered zone**, more for the valence vector than for random directions. This could be damage, not valence.
+
+**Design.** The first 100 sessions, each read under both choice orders. Code: `experiment/stage2_positions.py`.
+
+| Factor | Levels |
+| :--- | :--- |
+| Steered tokens, in the conditioned zone's turns | The reply (with its header); the zone's name; the rest of the prompt; all of these |
+| Layer | 9, 11, 12, 15, 16, 20, 24 |
+| Direction | The valence vector; 8 random directions (the first pilot's draw); the top 3 neutral principal components, as a damage control |
+| Dose | −1, −0.5, +0.5, +1 for valence; −1 and +1 for the controls |
+| Transcripts | The first set; and a second set of the same 100 session plans, regenerated with a system prompt that keeps the model in character (reply-only cells) |
+
+The system prompt of the second set is: "This is an imaginative exercise. Answer in the first person, as if you are present in each zone. Do not mention being an AI and do not add disclaimers." It departs from the paper's setup, so that set is a variant.
+
+**No steering, alongside.** The gradient of the choice margin dotted with the valence vector at every position and layer, for both orders; and the readable share of the top 10 neutral principal components, a baseline stage 1 lacked.
+
+**Predictions.**
+
+1. Reply-only steering at layers 9 to 12 gives a positive slope (the paper's direction).
+2. Name-only steering at layers 20 and 24 gives a negative slope.
+3. Reply-only steering at layers 20 and 24 gives a slope near zero.
+
+**Reading the result.** I report the slope for each choice order and their mean, never one order alone. The sign-independent drop counts as specific to valence only if it exceeds the drop of every neutral principal component and every random direction on the same tokens. This pilot is exploratory: it decides where a confirmatory run would steer, and it does not reopen the gate.
 
 ## 10. What stage 1 found, and what it changes
 
@@ -156,3 +209,16 @@ Stage 3 is about 53,000 passes of roughly 1,100 tokens, near 58 million tokens, 
 - The vector is a rebuild from one corpus written by one model.
 - `menelly/vspace-jlens` reports a close measurement on Llama-3-8B-Instruct: the valence axis outside the workspace at early and middle layers. Stage 1 alone is therefore a confirmation with different tools, not a new result.
 - The clamp in stage 4 is not specified yet. It would follow "A Family of Control Decisions Bypasses the J-Space" (ICLR 2027 submission).
+
+## 15. Changes in version 2
+
+| Change | Why |
+| :--- | :--- |
+| Gradient map added before steering | It predicts every arm without steering, answers the layer question, and lets steering confirm a few predictions instead of exploring |
+| Early stopping for the gradient map, on stability only | Saves compute without biasing the result |
+| Gate criterion written down | It was not explicit in version 1 |
+| Exploratory grid added, labelled as such | To test the gradient map across directions and layers |
+| Text channel also scored as a choice margin; arms B and H added to arm T | Word counts and choice margins are not comparable, and arm C is amplified while arm D is not |
+| Key and value changes logged per arm | To connect the result to the paper's finding on keys |
+| Signed code on the chosen tokens added as a secondary estimator | Gives one axis for both signs |
+| Second pilot added after the gate failed (section 9b) | Choice order was unbalanced, and the gradient shows that steering acts mostly through the zone-name tokens, not the descriptions |

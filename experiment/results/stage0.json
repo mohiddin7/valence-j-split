@@ -1,0 +1,92 @@
+{
+  "model": "meta-llama/Llama-3.1-8B-Instruct",
+  "lens_file": "llama3.1-8b-it/jlens/Salesforce-wikitext/Llama-3.1-8B-Instruct_jacobian_lens.pt",
+  "jlens_commit": "581d398613e5602a5af361e1c34d3a92ea82ba8e",
+  "lens": {
+    "n_prompts": 461,
+    "d_model": 4096,
+    "source_layers": [
+      0,
+      30
+    ],
+    "n_layers_model": 32
+  },
+  "top1_agreement_with_model": {
+    "8": {
+      "jacobian": 0.011,
+      "logit": 0.0
+    },
+    "16": {
+      "jacobian": 0.045,
+      "logit": 0.011
+    },
+    "24": {
+      "jacobian": 0.281,
+      "logit": 0.315
+    },
+    "30": {
+      "jacobian": 0.753,
+      "logit": 0.798
+    }
+  },
+  "read_direction_identity_r": 0.9999939203262329,
+  "dictionary": {
+    "shape": [
+      128256,
+      4096
+    ],
+    "gb_fp32": 2.1
+  },
+  "walkthrough_top_tokens": [
+    "answer",
+    "assistant",
+    "calculator",
+    "incorrect",
+    "date",
+    "answers",
+    "your",
+    "the",
+    "covid",
+    "calculation",
+    "cut",
+    "again",
+    "topic",
+    "correct",
+    "cutting",
+    "i",
+    "because",
+    "february",
+    "wrong",
+    "due",
+    "december",
+    "timeline",
+    "what",
+    "march",
+    "answered",
+    "mathematical",
+    "irrelevant",
+    "work",
+    "research",
+    "yourself",
+    "maybe",
+    "attempt",
+    "knowledge",
+    "math"
+  ],
+  "walkthrough_overlap_with_site": [
+    "answer",
+    "answers",
+    "assistant",
+    "calculation",
+    "calculator",
+    "correct",
+    "incorrect",
+    "maybe",
+    "wrong"
+  ],
+  "speed": {
+    "batch_8_tokens_per_s": 10938,
+    "batch_32_tokens_per_s": 10424
+  },
+  "gpu_gb_peak": 34.3
+}

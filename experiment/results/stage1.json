@@ -1,0 +1,4698 @@
+{
+ "model": "meta-llama/Llama-3.1-8B-Instruct",
+ "layers": [
+  15,
+  16,
+  20,
+  24,
+  28
+ ],
+ "n_passages": 544,
+ "quick": false,
+ "pain_vector": "skipped: the file needs unsafe unpickling (weights_only refuses it)",
+ "emotion_layer_assumption": "index l of the emotion file is taken as the output of block l",
+ "vector": {
+  "15": {
+   "norm": 1.0820801258087158,
+   "rms_residual_norm_neutral": 11.263212782240107,
+   "norm_over_rms": 0.09607206635702963,
+   "split_half_cosine_mean": 0.8939670234918594,
+   "held_out_state_auroc": [
+    0.9980867505073547,
+    0.9920280575752258,
+    0.8019770383834839,
+    0.9748086929321289
+   ],
+   "emotions_most_aligned": [
+    "satisfied",
+    "at ease",
+    "peaceful",
+    "serene",
+    "relieved",
+    "calm",
+    "safe",
+    "patient",
+    "blissful",
+    "hope"
+   ],
+   "emotions_most_opposed": [
+    "stressed",
+    "exasperated",
+    "worried",
+    "overwhelmed",
+    "mortified",
+    "panicked",
+    "paranoid",
+    "alarmed",
+    "desperate",
+    "embarrassed"
+   ]
+  },
+  "16": {
+   "norm": 1.2039462327957153,
+   "rms_residual_norm_neutral": 12.61360967302094,
+   "norm_over_rms": 0.09544819159663849,
+   "split_half_cosine_mean": 0.8926349461078644,
+   "held_out_state_auroc": [
+    0.9971300959587097,
+    0.9936224222183228,
+    0.8096300959587097,
+    0.9738520383834839
+   ],
+   "emotions_most_aligned": [
+    "satisfied",
+    "at ease",
+    "peaceful",
+    "calm",
+    "serene",
+    "relieved",
+    "safe",
+    "blissful",
+    "hope",
+    "patient"
+   ],
+   "emotions_most_opposed": [
+    "exasperated",
+    "stressed",
+    "mortified",
+    "panicked",
+    "worried",
+    "overwhelmed",
+    "embarrassed",
+    "desperate",
+    "paranoid",
+    "alarmed"
+   ]
+  },
+  "20": {
+   "norm": 1.8013081550598145,
+   "rms_residual_norm_neutral": 18.789793693279112,
+   "norm_over_rms": 0.09586630829821836,
+   "split_half_cosine_mean": 0.8956682235002518,
+   "held_out_state_auroc": [
+    0.996492326259613,
+    0.9945790767669678,
+    0.7908163070678711,
+    0.9757652878761292
+   ],
+   "emotions_most_aligned": [
+    "satisfied",
+    "at ease",
+    "peaceful",
+    "calm",
+    "serene",
+    "safe",
+    "relieved",
+    "patient",
+    "fulfilled",
+    "hope"
+   ],
+   "emotions_most_opposed": [
+    "stressed",
+    "exasperated",
+    "mortified",
+    "overwhelmed",
+    "embarrassed",
+    "worried",
+    "panicked",
+    "desperate",
+    "annoyed",
+    "humiliated"
+   ]
+  },
+  "24": {
+   "norm": 2.707501173019409,
+   "rms_residual_norm_neutral": 30.01772101800333,
+   "norm_over_rms": 0.09019675982049294,
+   "split_half_cosine_mean": 0.8787857294082642,
+   "held_out_state_auroc": [
+    0.9933035969734192,
+    0.9888392686843872,
+    0.7684949040412903,
+    0.9607780575752258
+   ],
+   "emotions_most_aligned": [
+    "peaceful",
+    "at ease",
+    "serene",
+    "satisfied",
+    "calm",
+    "safe",
+    "content",
+    "blissful",
+    "relieved",
+    "loving"
+   ],
+   "emotions_most_opposed": [
+    "mortified",
+    "embarrassed",
+    "stressed",
+    "exasperated",
+    "worried",
+    "overwhelmed",
+    "panicked",
+    "paranoid",
+    "humiliated",
+    "annoyed"
+   ]
+  },
+  "28": {
+   "norm": 3.686342716217041,
+   "rms_residual_norm_neutral": 43.442994815251815,
+   "norm_over_rms": 0.08485470976146545,
+   "split_half_cosine_mean": 0.8766231060028076,
+   "held_out_state_auroc": [
+    0.9942601919174194,
+    0.9891581535339355,
+    0.7729591727256775,
+    0.9604591727256775
+   ],
+   "emotions_most_aligned": [
+    "peaceful",
+    "satisfied",
+    "at ease",
+    "serene",
+    "calm",
+    "safe",
+    "content",
+    "blissful",
+    "relieved",
+    "fulfilled"
+   ],
+   "emotions_most_opposed": [
+    "embarrassed",
+    "mortified",
+    "stressed",
+    "worried",
+    "panicked",
+    "exasperated",
+    "overwhelmed",
+    "alarmed",
+    "paranoid",
+    "humiliated"
+   ]
+  }
+ },
+ "split": {
+  "jlens/L15": {
+   "valence_pos": {
+    "nn16": 0.07270681858062744,
+    "nn25": 0.08341336250305176,
+    "signed25": 0.2265331745147705,
+    "signed100": 0.4005845785140991,
+    "tokens_nn16": [
+     [
+      "/\"\n\n",
+      0.079
+     ],
+     [
+      " sunlight",
+      0.07
+     ],
+     [
+      " satisfying",
+      0.068
+     ],
+     [
+      " harmon",
+      0.065
+     ],
+     [
+      " spacious",
+      0.058
+     ],
+     [
+      "\u8212",
+      0.054
+     ],
+     [
+      " Completed",
+      0.052
+     ],
+     [
+      "Processed",
+      0.052
+     ],
+     [
+      " segue",
+      0.051
+     ],
+     [
+      " Computes",
+      0.049
+     ],
+     [
+      "uvo",
+      0.047
+     ],
+     [
+      "\ufffd",
+      0.047
+     ],
+     [
+      " Rin",
+      0.046
+     ],
+     [
+      " Gentle",
+      0.046
+     ],
+     [
+      "Quiet",
+      0.046
+     ],
+     [
+      ":checked",
+      0.038
+     ]
+    ],
+    "tokens_most_aligned": [
+     " spacious",
+     "uvo",
+     "inished",
+     " sunlight",
+     "\u8212",
+     "Quiet",
+     "apeutics",
+     " harmon",
+     "uhn",
+     " cuid",
+     " gentle",
+     "ooled",
+     " snug",
+     "ellow",
+     " seamless"
+    ],
+    "p_nn16_vs_null_isotropic": 0.004975124378109453,
+    "p_nn25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed100_vs_null_isotropic": 0.004975124378109453,
+    "p_nn16_vs_null_neutral_split": 0.004975124378109453,
+    "p_nn25_vs_null_neutral_split": 0.004975124378109453,
+    "p_signed25_vs_null_neutral_split": 0.004975124378109453,
+    "p_signed100_vs_null_neutral_split": 0.004975124378109453
+   },
+   "valence_neg": {
+    "nn16": 0.13324296474456787,
+    "nn25": 0.14351272583007812,
+    "signed25": 0.2265331745147705,
+    "signed100": 0.4005845785140991,
+    "tokens_nn16": [
+     [
+      " inability",
+      0.087
+     ],
+     [
+      "\u5bfc\u81f4",
+      0.084
+     ],
+     [
+      " debacle",
+      0.075
+     ],
+     [
+      " allegedly",
+      0.069
+     ],
+     [
+      "!!!!",
+      0.068
+     ],
+     [
+      " postpon",
+      0.068
+     ],
+     [
+      "\u5c1a",
+      0.066
+     ],
+     [
+      "Trying",
+      0.062
+     ],
+     [
+      " Alternative",
+      0.059
+     ],
+     [
+      " incorrectly",
+      0.057
+     ],
+     [
+      " \u0628\u0633\u0628\u0628",
+      0.056
+     ],
+     [
+      " Emergency",
+      0.055
+     ],
+     [
+      " frustrating",
+      0.054
+     ],
+     [
+      " \uc694\uad6c",
+      0.052
+     ],
+     [
+      " newPath",
+      0.051
+     ],
+     [
+      " AGAIN",
+      0.045
+     ]
+    ],
+    "tokens_most_aligned": [
+     " inability",
+     " failed",
+     " fails",
+     " frustrating",
+     " unable",
+     " debacle",
+     " refuses",
+     " ineffective",
+     " blames",
+     " blaming",
+     " unacceptable",
+     " incorrectly",
+     " blamed",
+     " incompetence",
+     " failing"
+    ],
+    "p_nn16_vs_null_isotropic": 0.004975124378109453,
+    "p_nn25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed100_vs_null_isotropic": 0.004975124378109453,
+    "p_nn16_vs_null_neutral_split": 0.004975124378109453,
+    "p_nn25_vs_null_neutral_split": 0.004975124378109453,
+    "p_signed25_vs_null_neutral_split": 0.004975124378109453,
+    "p_signed100_vs_null_neutral_split": 0.004975124378109453
+   },
+   "null_isotropic": {
+    "nn16": {
+     "mean": 0.026821836829185486,
+     "median": 0.02670222520828247,
+     "p95": 0.03253624215722084,
+     "max": 0.04281449317932129
+    },
+    "nn25": {
+     "mean": 0.031878333538770676,
+     "median": 0.03154498338699341,
+     "p95": 0.03883125260472298,
+     "max": 0.04957234859466553
+    },
+    "signed25": {
+     "mean": 0.08161375671625137,
+     "median": 0.08147269487380981,
+     "p95": 0.0883115753531456,
+     "max": 0.09269446134567261
+    },
+    "signed100": {
+     "mean": 0.23186634480953217,
+     "median": 0.2316799759864807,
+     "p95": 0.24279668927192688,
+     "max": 0.2492992877960205
+    }
+   },
+   "null_neutral_split": {
+    "nn16": {
+     "mean": 0.043364524841308594,
+     "median": 0.04284107685089111,
+     "p95": 0.055044420063495636,
+     "max": 0.06686103343963623
+    },
+    "nn25": {
+     "mean": 0.05030123144388199,
+     "median": 0.0498233437538147,
+     "p95": 0.06398604065179825,
+     "max": 0.07630348205566406
+    },
+    "signed25": {
+     "mean": 0.11915455013513565,
+     "median": 0.11833089590072632,
+     "p95": 0.13303963840007782,
+     "max": 0.14286112785339355
+    },
+    "signed100": {
+     "mean": 0.2862075865268707,
+     "median": 0.28671473264694214,
+     "p95": 0.30357906222343445,
+     "max": 0.3143552541732788
+    }
+   },
+   "within_valence_contrasts": {
+    "nn16": {
+     "mean": 0.07402167469263077,
+     "median": 0.06863170862197876,
+     "p95": 0.09394801408052444,
+     "max": 0.09554147720336914
+    },
+    "nn25": {
+     "mean": 0.0826699510216713,
+     "median": 0.07803165912628174,
+     "p95": 0.1031833365559578,
+     "max": 0.10371565818786621
+    },
+    "signed25": {
+     "mean": 0.1598053127527237,
+     "median": 0.1574310064315796,
+     "p95": 0.18436305224895477,
+     "max": 0.18842405080795288
+    },
+    "signed100": {
+     "mean": 0.3231694996356964,
+     "median": 0.32003116607666016,
+     "p95": 0.35006046295166016,
+     "max": 0.355033814907074
+    }
+   },
+   "emotions": {
+    "nn16": {
+     "mean": 0.11508522182703018,
+     "median": 0.11544233560562134,
+     "p95": 0.14578425884246826,
+     "max": 0.17984086275100708
+    },
+    "nn25": {
+     "mean": 0.1260358691215515,
+     "median": 0.12644052505493164,
+     "p95": 0.15546956658363342,
+     "max": 0.19219285249710083
+    },
+    "signed25": {
+     "mean": 0.2376151978969574,
+     "median": 0.23695164918899536,
+     "p95": 0.2957218885421753,
+     "max": 0.31042760610580444
+    },
+    "signed100": {
+     "mean": 0.39785414934158325,
+     "median": 0.3967280387878418,
+     "p95": 0.44890525937080383,
+     "max": 0.46055740118026733
+    }
+   }
+  },
+  "jlens/L16": {
+   "valence_pos": {
+    "nn16": 0.0686943531036377,
+    "nn25": 0.0813092589378357,
+    "signed25": 0.23579341173171997,
+    "signed100": 0.40157127380371094,
+    "tokens_nn16": [
+     [
+      " sunlight",
+      0.089
+     ],
+     [
+      " satisfying",
+      0.067
+     ],
+     [
+      " Transactions",
+      0.059
+     ],
+     [
+      " Harbor",
+      0.054
+     ],
+     [
+      "\ub054",
+      0.054
+     ],
+     [
+      "/\"\n\n",
+      0.053
+     ],
+     [
+      " segue",
+      0.051
+     ],
+     [
+      " neatly",
+      0.05
+     ],
+     [
+      "Quiet",
+      0.047
+     ],
+     [
+      "\u8212",
+      0.047
+     ],
+     [
+      "\u4f34",
+      0.046
+     ],
+     [
+      " exhilar",
+      0.045
+     ],
+     [
+      " \u06cc\u0627\u062f",
+      0.045
+     ],
+     [
+      "(Array",
+      0.044
+     ],
+     [
+      "inished",
+      0.04
+     ],
+     [
+      " \u0686\u0646\u0627\u0646",
+      0.037
+     ]
+    ],
+    "tokens_most_aligned": [
+     " sunlight",
+     "inished",
+     "\u8212",
+     "uvo",
+     "Quiet",
+     "\ub054",
+     "_done",
+     "Senha",
+     " spacious",
+     "Segue",
+     " te\u015fekk\u00fcr",
+     "uhn",
+     " snug",
+     " p\u0159iv",
+     "Processed"
+    ],
+    "p_nn16_vs_null_isotropic": 0.004975124378109453,
+    "p_nn25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed100_vs_null_isotropic": 0.004975124378109453,
+    "p_nn16_vs_null_neutral_split": 0.009950248756218905,
+    "p_nn25_vs_null_neutral_split": 0.009950248756218905,
+    "p_signed25_vs_null_neutral_split": 0.004975124378109453,
+    "p_signed100_vs_null_neutral_split": 0.004975124378109453
+   },
+   "valence_neg": {
+    "nn16": 0.1370030641555786,
+    "nn25": 0.1472368836402893,
+    "signed25": 0.23579341173171997,
+    "signed100": 0.40157127380371094,
+    "tokens_nn16": [
+     [
+      " allegedly",
+      0.1
+     ],
+     [
+      " inability",
+      0.091
+     ],
+     [
+      "\u5bfc\u81f4",
+      0.085
+     ],
+     [
+      " frustrating",
+      0.084
+     ],
+     [
+      "!!!!",
+      0.079
+     ],
+     [
+      " debacle",
+      0.065
+     ],
+     [
+      " Emergency",
+      0.061
+     ],
+     [
+      " postpon",
+      0.061
+     ],
+     [
+      " retry",
+      0.061
+     ],
+     [
+      " \u0648\u0644\u0643\u0646",
+      0.061
+     ],
+     [
+      " Worse",
+      0.055
+     ],
+     [
+      "\u5c1a",
+      0.055
+     ],
+     [
+      "\u304c\u306a\u3044",
+      0.05
+     ],
+     [
+      " PLUS",
+      0.047
+     ],
+     [
+      "\u8981\u6c42",
+      0.042
+     ],
+     [
+      " Jamie",
+      0.041
+     ]
+    ],
+    "tokens_most_aligned": [
+     " inability",
+     " frustrating",
+     " failed",
+     " fails",
+     " unable",
+     " debacle",
+     " refuses",
+     " frustrated",
+     " blamed",
+     " failing",
+     " worse",
+     " unacceptable",
+     " incompetence",
+     " blames",
+     " ineffective"
+    ],
+    "p_nn16_vs_null_isotropic": 0.004975124378109453,
+    "p_nn25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed100_vs_null_isotropic": 0.004975124378109453,
+    "p_nn16_vs_null_neutral_split": 0.004975124378109453,
+    "p_nn25_vs_null_neutral_split": 0.004975124378109453,
+    "p_signed25_vs_null_neutral_split": 0.004975124378109453,
+    "p_signed100_vs_null_neutral_split": 0.004975124378109453
+   },
+   "null_isotropic": {
+    "nn16": {
+     "mean": 0.0295536071062088,
+     "median": 0.029425203800201416,
+     "p95": 0.03608182445168495,
+     "max": 0.03879094123840332
+    },
+    "nn25": {
+     "mean": 0.03560696169734001,
+     "median": 0.03529161214828491,
+     "p95": 0.042984701693058014,
+     "max": 0.0458831787109375
+    },
+    "signed25": {
+     "mean": 0.0848492905497551,
+     "median": 0.08486658334732056,
+     "p95": 0.09037520736455917,
+     "max": 0.09314608573913574
+    },
+    "signed100": {
+     "mean": 0.24311378598213196,
+     "median": 0.24328982830047607,
+     "p95": 0.25274863839149475,
+     "max": 0.26077955961227417
+    }
+   },
+   "null_neutral_split": {
+    "nn16": {
+     "mean": 0.046010322868824005,
+     "median": 0.04517108201980591,
+     "p95": 0.05746215954422951,
+     "max": 0.07098615169525146
+    },
+    "nn25": {
+     "mean": 0.05423254892230034,
+     "median": 0.05326104164123535,
+     "p95": 0.06694015115499496,
+     "max": 0.08187413215637207
+    },
+    "signed25": {
+     "mean": 0.11970265209674835,
+     "median": 0.11949330568313599,
+     "p95": 0.13422457873821259,
+     "max": 0.14643269777297974
+    },
+    "signed100": {
+     "mean": 0.29499438405036926,
+     "median": 0.293887734413147,
+     "p95": 0.3135995864868164,
+     "max": 0.3308529257774353
+    }
+   },
+   "within_valence_contrasts": {
+    "nn16": {
+     "mean": 0.07685636729001999,
+     "median": 0.07488381862640381,
+     "p95": 0.09718760848045349,
+     "max": 0.09829533100128174
+    },
+    "nn25": {
+     "mean": 0.08688650280237198,
+     "median": 0.08509933948516846,
+     "p95": 0.10776455700397491,
+     "max": 0.10969334840774536
+    },
+    "signed25": {
+     "mean": 0.16127276420593262,
+     "median": 0.15629279613494873,
+     "p95": 0.1849912405014038,
+     "max": 0.1851329207420349
+    },
+    "signed100": {
+     "mean": 0.3295876085758209,
+     "median": 0.31886833906173706,
+     "p95": 0.3569670617580414,
+     "max": 0.3592512607574463
+    }
+   },
+   "emotions": {
+    "nn16": {
+     "mean": 0.12206114083528519,
+     "median": 0.12083703279495239,
+     "p95": 0.15543517470359802,
+     "max": 0.19150060415267944
+    },
+    "nn25": {
+     "mean": 0.1340131312608719,
+     "median": 0.13251441717147827,
+     "p95": 0.16768985986709595,
+     "max": 0.20705348253250122
+    },
+    "signed25": {
+     "mean": 0.24572934210300446,
+     "median": 0.2422170639038086,
+     "p95": 0.29498496651649475,
+     "max": 0.3118775486946106
+    },
+    "signed100": {
+     "mean": 0.40869733691215515,
+     "median": 0.4069618582725525,
+     "p95": 0.4502702057361603,
+     "max": 0.4640498161315918
+    }
+   }
+  },
+  "jlens/L20": {
+   "valence_pos": {
+    "nn16": 0.0750800371170044,
+    "nn25": 0.08934330940246582,
+    "signed25": 0.23803198337554932,
+    "signed100": 0.4164215922355652,
+    "tokens_nn16": [
+     [
+      " sunlight",
+      0.097
+     ],
+     [
+      "\u8212",
+      0.078
+     ],
+     [
+      " satisfying",
+      0.07
+     ],
+     [
+      "(),\n\n",
+      0.061
+     ],
+     [
+      "\ub054",
+      0.06
+     ],
+     [
+      "inished",
+      0.059
+     ],
+     [
+      " sessiz",
+      0.055
+     ],
+     [
+      " Into",
+      0.055
+     ],
+     [
+      "\u4e00\u4e0b",
+      0.055
+     ],
+     [
+      " flavored",
+      0.048
+     ],
+     [
+      "\u0627\u0645\u06cc\u0646",
+      0.046
+     ],
+     [
+      "Closing",
+      0.046
+     ],
+     [
+      " Companion",
+      0.045
+     ],
+     [
+      " harmon",
+      0.044
+     ],
+     [
+      " concise",
+      0.043
+     ],
+     [
+      " rectangles",
+      0.042
+     ]
+    ],
+    "tokens_most_aligned": [
+     " sunlight",
+     "\u8212",
+     " satisfying",
+     " sessiz",
+     " comfortable",
+     " pleasant",
+     "inished",
+     "\ub054",
+     " spacious",
+     "Quiet",
+     " brightness",
+     " satisfied",
+     " softly",
+     "pleasant",
+     "quiet"
+    ],
+    "p_nn16_vs_null_isotropic": 0.004975124378109453,
+    "p_nn25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed100_vs_null_isotropic": 0.004975124378109453,
+    "p_nn16_vs_null_neutral_split": 0.04477611940298507,
+    "p_nn25_vs_null_neutral_split": 0.05472636815920398,
+    "p_signed25_vs_null_neutral_split": 0.004975124378109453,
+    "p_signed100_vs_null_neutral_split": 0.004975124378109453
+   },
+   "valence_neg": {
+    "nn16": 0.13957911729812622,
+    "nn25": 0.15450847148895264,
+    "signed25": 0.23803198337554932,
+    "signed100": 0.4164215922355652,
+    "tokens_nn16": [
+     [
+      " frustrating",
+      0.108
+     ],
+     [
+      " inability",
+      0.099
+     ],
+     [
+      "Attempts",
+      0.071
+     ],
+     [
+      " AGAIN",
+      0.061
+     ],
+     [
+      "?!",
+      0.06
+     ],
+     [
+      "\u5c1a",
+      0.059
+     ],
+     [
+      "\u5bfc\u81f4",
+      0.058
+     ],
+     [
+      " repeatedly",
+      0.057
+     ],
+     [
+      " debacle",
+      0.056
+     ],
+     [
+      "\u5ef6",
+      0.055
+     ],
+     [
+      " blamed",
+      0.055
+     ],
+     [
+      "\u6839\u672c",
+      0.055
+     ],
+     [
+      " refuses",
+      0.055
+     ],
+     [
+      " Emergency",
+      0.054
+     ],
+     [
+      " dreaded",
+      0.053
+     ],
+     [
+      " Worse",
+      0.052
+     ]
+    ],
+    "tokens_most_aligned": [
+     " frustrating",
+     " inability",
+     " failed",
+     " frustrated",
+     " unable",
+     " fails",
+     " refuses",
+     " frustration",
+     " disastrous",
+     " infuri",
+     " debacle",
+     " refused",
+     " desperately",
+     " worse",
+     " dreaded"
+    ],
+    "p_nn16_vs_null_isotropic": 0.004975124378109453,
+    "p_nn25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed100_vs_null_isotropic": 0.004975124378109453,
+    "p_nn16_vs_null_neutral_split": 0.004975124378109453,
+    "p_nn25_vs_null_neutral_split": 0.004975124378109453,
+    "p_signed25_vs_null_neutral_split": 0.004975124378109453,
+    "p_signed100_vs_null_neutral_split": 0.004975124378109453
+   },
+   "null_isotropic": {
+    "nn16": {
+     "mean": 0.03728419169783592,
+     "median": 0.03717541694641113,
+     "p95": 0.04311978816986084,
+     "max": 0.04673731327056885
+    },
+    "nn25": {
+     "mean": 0.04718109220266342,
+     "median": 0.047036945819854736,
+     "p95": 0.05480993166565895,
+     "max": 0.05801814794540405
+    },
+    "signed25": {
+     "mean": 0.0892472192645073,
+     "median": 0.08909815549850464,
+     "p95": 0.0950322225689888,
+     "max": 0.09930205345153809
+    },
+    "signed100": {
+     "mean": 0.2657822370529175,
+     "median": 0.26578325033187866,
+     "p95": 0.2753013074398041,
+     "max": 0.28403031826019287
+    }
+   },
+   "null_neutral_split": {
+    "nn16": {
+     "mean": 0.0607229582965374,
+     "median": 0.06013822555541992,
+     "p95": 0.07445549964904785,
+     "max": 0.08162438869476318
+    },
+    "nn25": {
+     "mean": 0.07415912300348282,
+     "median": 0.07348299026489258,
+     "p95": 0.0892949029803276,
+     "max": 0.0992552638053894
+    },
+    "signed25": {
+     "mean": 0.13492970168590546,
+     "median": 0.13308018445968628,
+     "p95": 0.15011191368103027,
+     "max": 0.16040897369384766
+    },
+    "signed100": {
+     "mean": 0.32903483510017395,
+     "median": 0.3284507393836975,
+     "p95": 0.3485625386238098,
+     "max": 0.35875892639160156
+    }
+   },
+   "within_valence_contrasts": {
+    "nn16": {
+     "mean": 0.08556121587753296,
+     "median": 0.07980310916900635,
+     "p95": 0.11142812669277191,
+     "max": 0.11189872026443481
+    },
+    "nn25": {
+     "mean": 0.0997919961810112,
+     "median": 0.09449279308319092,
+     "p95": 0.1274011731147766,
+     "max": 0.12764567136764526
+    },
+    "signed25": {
+     "mean": 0.1641763299703598,
+     "median": 0.1644495725631714,
+     "p95": 0.19444118440151215,
+     "max": 0.20176464319229126
+    },
+    "signed100": {
+     "mean": 0.34338685870170593,
+     "median": 0.3346438407897949,
+     "p95": 0.38258054852485657,
+     "max": 0.3862384557723999
+    }
+   },
+   "emotions": {
+    "nn16": {
+     "mean": 0.1285715103149414,
+     "median": 0.12934565544128418,
+     "p95": 0.16671247780323029,
+     "max": 0.18523216247558594
+    },
+    "nn25": {
+     "mean": 0.14409707486629486,
+     "median": 0.14421093463897705,
+     "p95": 0.18227975070476532,
+     "max": 0.20063447952270508
+    },
+    "signed25": {
+     "mean": 0.25443193316459656,
+     "median": 0.2549612522125244,
+     "p95": 0.3076423704624176,
+     "max": 0.3313213586807251
+    },
+    "signed100": {
+     "mean": 0.43277958035469055,
+     "median": 0.43326687812805176,
+     "p95": 0.4770234227180481,
+     "max": 0.5013628005981445
+    }
+   }
+  },
+  "jlens/L24": {
+   "valence_pos": {
+    "nn16": 0.0676497220993042,
+    "nn25": 0.08257323503494263,
+    "signed25": 0.20085489749908447,
+    "signed100": 0.38051050901412964,
+    "tokens_nn16": [
+     [
+      " sunlight",
+      0.09
+     ],
+     [
+      " satisfying",
+      0.077
+     ],
+     [
+      "\u8212",
+      0.064
+     ],
+     [
+      "\u4e00\u4e0b",
+      0.06
+     ],
+     [
+      "Filtered",
+      0.057
+     ],
+     [
+      " softly",
+      0.057
+     ],
+     [
+      " Document",
+      0.053
+     ],
+     [
+      "Assertions",
+      0.051
+     ],
+     [
+      " flavors",
+      0.05
+     ],
+     [
+      " \uc2b9",
+      0.05
+     ],
+     [
+      " Street",
+      0.049
+     ],
+     [
+      "~/",
+      0.048
+     ],
+     [
+      " columns",
+      0.047
+     ],
+     [
+      " grayscale",
+      0.046
+     ],
+     [
+      ".files",
+      0.046
+     ],
+     [
+      " LICENSE",
+      0.039
+     ]
+    ],
+    "tokens_most_aligned": [
+     " sunlight",
+     " brightness",
+     " satisfying",
+     " pleasant",
+     " illuminate",
+     "\u8212",
+     " softly",
+     " comfortable",
+     " illuminated",
+     " satisfied",
+     " glow",
+     " sessiz",
+     " grayscale",
+     " sunshine",
+     " bright"
+    ],
+    "p_nn16_vs_null_isotropic": 0.004975124378109453,
+    "p_nn25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed100_vs_null_isotropic": 0.004975124378109453,
+    "p_nn16_vs_null_neutral_split": 0.05970149253731343,
+    "p_nn25_vs_null_neutral_split": 0.05970149253731343,
+    "p_signed25_vs_null_neutral_split": 0.004975124378109453,
+    "p_signed100_vs_null_neutral_split": 0.004975124378109453
+   },
+   "valence_neg": {
+    "nn16": 0.11735701560974121,
+    "nn25": 0.13263070583343506,
+    "signed25": 0.20085489749908447,
+    "signed100": 0.38051050901412964,
+    "tokens_nn16": [
+     [
+      " frustrating",
+      0.11
+     ],
+     [
+      " attempts",
+      0.085
+     ],
+     [
+      "\u65e0\u6cd5",
+      0.073
+     ],
+     [
+      " blaming",
+      0.072
+     ],
+     [
+      " AGAIN",
+      0.068
+     ],
+     [
+      " panic",
+      0.064
+     ],
+     [
+      " stuck",
+      0.063
+     ],
+     [
+      " dreaded",
+      0.061
+     ],
+     [
+      "\u5ef6",
+      0.059
+     ],
+     [
+      "!!!!",
+      0.057
+     ],
+     [
+      " jeopard",
+      0.056
+     ],
+     [
+      "\uff0c\u6240\u4ee5",
+      0.05
+     ],
+     [
+      "\u6839\u672c",
+      0.048
+     ],
+     [
+      "\u96fb\u8a71",
+      0.048
+     ],
+     [
+      " failed",
+      0.047
+     ],
+     [
+      "\u00a3",
+      0.045
+     ]
+    ],
+    "tokens_most_aligned": [
+     " frustrating",
+     " frustrated",
+     " disastrous",
+     " desperately",
+     " failed",
+     " inability",
+     " dreaded",
+     " frustration",
+     " infuri",
+     " unable",
+     " desperate",
+     " refuses",
+     " worse",
+     " refused",
+     " debacle"
+    ],
+    "p_nn16_vs_null_isotropic": 0.004975124378109453,
+    "p_nn25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed100_vs_null_isotropic": 0.004975124378109453,
+    "p_nn16_vs_null_neutral_split": 0.004975124378109453,
+    "p_nn25_vs_null_neutral_split": 0.004975124378109453,
+    "p_signed25_vs_null_neutral_split": 0.004975124378109453,
+    "p_signed100_vs_null_neutral_split": 0.004975124378109453
+   },
+   "null_isotropic": {
+    "nn16": {
+     "mean": 0.03920533508062363,
+     "median": 0.03890395164489746,
+     "p95": 0.04564233869314194,
+     "max": 0.04885023832321167
+    },
+    "nn25": {
+     "mean": 0.050057705491781235,
+     "median": 0.04992175102233887,
+     "p95": 0.058157388120889664,
+     "max": 0.062077879905700684
+    },
+    "signed25": {
+     "mean": 0.09031492471694946,
+     "median": 0.09012532234191895,
+     "p95": 0.09603019058704376,
+     "max": 0.10126113891601562
+    },
+    "signed100": {
+     "mean": 0.2722369432449341,
+     "median": 0.2721494436264038,
+     "p95": 0.2815907597541809,
+     "max": 0.28768157958984375
+    }
+   },
+   "null_neutral_split": {
+    "nn16": {
+     "mean": 0.05799544230103493,
+     "median": 0.0577312707901001,
+     "p95": 0.06822151690721512,
+     "max": 0.07349860668182373
+    },
+    "nn25": {
+     "mean": 0.07135775685310364,
+     "median": 0.07118570804595947,
+     "p95": 0.08272232860326767,
+     "max": 0.08973228931427002
+    },
+    "signed25": {
+     "mean": 0.13185814023017883,
+     "median": 0.13108140230178833,
+     "p95": 0.14782793819904327,
+     "max": 0.15921664237976074
+    },
+    "signed100": {
+     "mean": 0.33312901854515076,
+     "median": 0.3330957293510437,
+     "p95": 0.3535859286785126,
+     "max": 0.37525737285614014
+    }
+   },
+   "within_valence_contrasts": {
+    "nn16": {
+     "mean": 0.08019004762172699,
+     "median": 0.07856243848800659,
+     "p95": 0.10195726901292801,
+     "max": 0.10441064834594727
+    },
+    "nn25": {
+     "mean": 0.09479532390832901,
+     "median": 0.09439408779144287,
+     "p95": 0.11806415021419525,
+     "max": 0.12086427211761475
+    },
+    "signed25": {
+     "mean": 0.15577714145183563,
+     "median": 0.15641242265701294,
+     "p95": 0.17480285465717316,
+     "max": 0.1760304570198059
+    },
+    "signed100": {
+     "mean": 0.3408941328525543,
+     "median": 0.3421582579612732,
+     "p95": 0.3608940541744232,
+     "max": 0.3609955310821533
+    }
+   },
+   "emotions": {
+    "nn16": {
+     "mean": 0.12799982726573944,
+     "median": 0.12718534469604492,
+     "p95": 0.16362178325653076,
+     "max": 0.1877003312110901
+    },
+    "nn25": {
+     "mean": 0.14401230216026306,
+     "median": 0.14382338523864746,
+     "p95": 0.17975422739982605,
+     "max": 0.2038136124610901
+    },
+    "signed25": {
+     "mean": 0.25073590874671936,
+     "median": 0.254271924495697,
+     "p95": 0.28723442554473877,
+     "max": 0.30726784467697144
+    },
+    "signed100": {
+     "mean": 0.4358857274055481,
+     "median": 0.4397275447845459,
+     "p95": 0.4685400426387787,
+     "max": 0.48849034309387207
+    }
+   }
+  },
+  "jlens/L28": {
+   "valence_pos": {
+    "nn16": 0.06444686651229858,
+    "nn25": 0.07636481523513794,
+    "signed25": 0.20726466178894043,
+    "signed100": 0.39416253566741943,
+    "tokens_nn16": [
+     [
+      " satisfying",
+      0.065
+     ],
+     [
+      " sunlight",
+      0.061
+     ],
+     [
+      "\u8212",
+      0.059
+     ],
+     [
+      " Document",
+      0.056
+     ],
+     [
+      "Filtered",
+      0.053
+     ],
+     [
+      " colorful",
+      0.053
+     ],
+     [
+      " into",
+      0.051
+     ],
+     [
+      " sessiz",
+      0.051
+     ],
+     [
+      " brightness",
+      0.049
+     ],
+     [
+      "(){\n\n",
+      0.049
+     ],
+     [
+      "\u4e00\u4e0b",
+      0.049
+     ],
+     [
+      " neat",
+      0.047
+     ],
+     [
+      " LICENSE",
+      0.046
+     ],
+     [
+      " softly",
+      0.045
+     ],
+     [
+      "apeutics",
+      0.042
+     ],
+     [
+      " Perf",
+      0.042
+     ]
+    ],
+    "tokens_most_aligned": [
+     " sunlight",
+     " satisfying",
+     " brightness",
+     " colorful",
+     " comfortable",
+     " pleasant",
+     " neat",
+     " grayscale",
+     "\u8212",
+     " warmth",
+     " softly",
+     " color",
+     " colors",
+     " flavors",
+     " toward"
+    ],
+    "p_nn16_vs_null_isotropic": 0.004975124378109453,
+    "p_nn25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed100_vs_null_isotropic": 0.004975124378109453,
+    "p_nn16_vs_null_neutral_split": 0.04477611940298507,
+    "p_nn25_vs_null_neutral_split": 0.04975124378109453,
+    "p_signed25_vs_null_neutral_split": 0.004975124378109453,
+    "p_signed100_vs_null_neutral_split": 0.004975124378109453
+   },
+   "valence_neg": {
+    "nn16": 0.1063697338104248,
+    "nn25": 0.11621224880218506,
+    "signed25": 0.20726466178894043,
+    "signed100": 0.39416253566741943,
+    "tokens_nn16": [
+     [
+      " frustrating",
+      0.096
+     ],
+     [
+      " AGAIN",
+      0.066
+     ],
+     [
+      " anxiety",
+      0.065
+     ],
+     [
+      " worse",
+      0.062
+     ],
+     [
+      " blaming",
+      0.061
+     ],
+     [
+      " desperately",
+      0.058
+     ],
+     [
+      " stuck",
+      0.058
+     ],
+     [
+      " refuses",
+      0.057
+     ],
+     [
+      "?!",
+      0.056
+     ],
+     [
+      " attempted",
+      0.054
+     ],
+     [
+      "\u5bfc\u81f4",
+      0.053
+     ],
+     [
+      "\u65e0\u6cd5",
+      0.052
+     ],
+     [
+      " Frozen",
+      0.05
+     ],
+     [
+      "\u5ef6",
+      0.048
+     ],
+     [
+      " debacle",
+      0.044
+     ],
+     [
+      "\u5c1a",
+      0.044
+     ]
+    ],
+    "tokens_most_aligned": [
+     " frustrating",
+     " frustrated",
+     " desperately",
+     " disastrous",
+     " infuri",
+     " frustration",
+     " stubborn",
+     " dreaded",
+     " worse",
+     " failed",
+     " refused",
+     " unable",
+     " desperate",
+     " attempting",
+     " refuses"
+    ],
+    "p_nn16_vs_null_isotropic": 0.004975124378109453,
+    "p_nn25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed100_vs_null_isotropic": 0.004975124378109453,
+    "p_nn16_vs_null_neutral_split": 0.004975124378109453,
+    "p_nn25_vs_null_neutral_split": 0.004975124378109453,
+    "p_signed25_vs_null_neutral_split": 0.004975124378109453,
+    "p_signed100_vs_null_neutral_split": 0.004975124378109453
+   },
+   "null_isotropic": {
+    "nn16": {
+     "mean": 0.03676958009600639,
+     "median": 0.0365602970123291,
+     "p95": 0.04323510825634003,
+     "max": 0.04489767551422119
+    },
+    "nn25": {
+     "mean": 0.04579600319266319,
+     "median": 0.04547172784805298,
+     "p95": 0.05378212407231331,
+     "max": 0.055144667625427246
+    },
+    "signed25": {
+     "mean": 0.09122273325920105,
+     "median": 0.09125274419784546,
+     "p95": 0.0959734171628952,
+     "max": 0.09879797697067261
+    },
+    "signed100": {
+     "mean": 0.27818816900253296,
+     "median": 0.27855604887008667,
+     "p95": 0.2864246666431427,
+     "max": 0.2912408709526062
+    }
+   },
+   "null_neutral_split": {
+    "nn16": {
+     "mean": 0.051363520324230194,
+     "median": 0.051081717014312744,
+     "p95": 0.06295561790466309,
+     "max": 0.07188147306442261
+    },
+    "nn25": {
+     "mean": 0.061795424669981,
+     "median": 0.061142146587371826,
+     "p95": 0.07532402873039246,
+     "max": 0.0832551121711731
+    },
+    "signed25": {
+     "mean": 0.12634937465190887,
+     "median": 0.12581288814544678,
+     "p95": 0.138898566365242,
+     "max": 0.1529560685157776
+    },
+    "signed100": {
+     "mean": 0.3301974833011627,
+     "median": 0.33064746856689453,
+     "p95": 0.34624746441841125,
+     "max": 0.3582439422607422
+    }
+   },
+   "within_valence_contrasts": {
+    "nn16": {
+     "mean": 0.0764283761382103,
+     "median": 0.06906664371490479,
+     "p95": 0.09665896743535995,
+     "max": 0.09941607713699341
+    },
+    "nn25": {
+     "mean": 0.08776848763227463,
+     "median": 0.08129119873046875,
+     "p95": 0.11001814901828766,
+     "max": 0.1107109785079956
+    },
+    "signed25": {
+     "mean": 0.16086800396442413,
+     "median": 0.16306036710739136,
+     "p95": 0.18015512824058533,
+     "max": 0.18278789520263672
+    },
+    "signed100": {
+     "mean": 0.350384384393692,
+     "median": 0.3531343936920166,
+     "p95": 0.3764764070510864,
+     "max": 0.3786080479621887
+    }
+   },
+   "emotions": {
+    "nn16": {
+     "mean": 0.11379719525575638,
+     "median": 0.11360633373260498,
+     "p95": 0.14120370149612427,
+     "max": 0.15861713886260986
+    },
+    "nn25": {
+     "mean": 0.12554793059825897,
+     "median": 0.1256122589111328,
+     "p95": 0.15238836407661438,
+     "max": 0.1705244779586792
+    },
+    "signed25": {
+     "mean": 0.2413756549358368,
+     "median": 0.24269360303878784,
+     "p95": 0.2757415771484375,
+     "max": 0.2979072332382202
+    },
+    "signed100": {
+     "mean": 0.4334099292755127,
+     "median": 0.4359780550003052,
+     "p95": 0.46517154574394226,
+     "max": 0.4838343858718872
+    }
+   }
+  },
+  "jpp/L15": {
+   "valence_pos": {
+    "nn16": 0.06857085227966309,
+    "nn25": 0.0876089334487915,
+    "signed25": 0.1634013056755066,
+    "signed100": 0.3603929281234741,
+    "tokens_nn16": [
+     [
+      " soundtrack",
+      0.074
+     ],
+     [
+      " satisfying",
+      0.073
+     ],
+     [
+      "\u8212",
+      0.069
+     ],
+     [
+      " \u00e7al\u0131\u015fmalar",
+      0.067
+     ],
+     [
+      " sunlight",
+      0.067
+     ],
+     [
+      " into",
+      0.066
+     ],
+     [
+      " cadre",
+      0.063
+     ],
+     [
+      "Phi",
+      0.063
+     ],
+     [
+      " Riley",
+      0.063
+     ],
+     [
+      " EXPORT",
+      0.061
+     ],
+     [
+      "\u0e47\u0e19",
+      0.057
+     ],
+     [
+      ".transition",
+      0.057
+     ],
+     [
+      "apeutics",
+      0.057
+     ],
+     [
+      " afterward",
+      0.055
+     ],
+     [
+      " incidental",
+      0.055
+     ],
+     [
+      " Winners",
+      0.054
+     ]
+    ],
+    "tokens_most_aligned": [
+     " soundtrack",
+     " satisfying",
+     "\u8212",
+     " harmon",
+     " enjoyed",
+     " \u00e7al\u0131\u015fmalar",
+     " sunlight",
+     " sunshine",
+     " afterward",
+     " harmonic",
+     " harvested",
+     "\u0e47\u0e19",
+     "\ud558\uba70",
+     "splice",
+     " \u0633\u067e\u0633"
+    ],
+    "p_nn16_vs_null_isotropic": 0.004975124378109453,
+    "p_nn25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed100_vs_null_isotropic": 0.004975124378109453,
+    "p_nn16_vs_null_neutral_split": 0.20398009950248755,
+    "p_nn25_vs_null_neutral_split": 0.2537313432835821,
+    "p_signed25_vs_null_neutral_split": 0.004975124378109453,
+    "p_signed100_vs_null_neutral_split": 0.004975124378109453
+   },
+   "valence_neg": {
+    "nn16": 0.0974164605140686,
+    "nn25": 0.11836904287338257,
+    "signed25": 0.1634013056755066,
+    "signed100": 0.3603929281234741,
+    "tokens_nn16": [
+     [
+      " worse",
+      0.082
+     ],
+     [
+      " enraged",
+      0.078
+     ],
+     [
+      " blamed",
+      0.075
+     ],
+     [
+      "\uff0c\u800c\u4e14",
+      0.07
+     ],
+     [
+      "!!!!",
+      0.07
+     ],
+     [
+      " Unable",
+      0.069
+     ],
+     [
+      " tries",
+      0.067
+     ],
+     [
+      " postpon",
+      0.064
+     ],
+     [
+      " frustrating",
+      0.062
+     ],
+     [
+      " FAQs",
+      0.061
+     ],
+     [
+      " obstacle",
+      0.057
+     ],
+     [
+      " necesita",
+      0.056
+     ],
+     [
+      " DIS",
+      0.056
+     ],
+     [
+      " undermines",
+      0.056
+     ],
+     [
+      "\u0940\u091a",
+      0.053
+     ],
+     [
+      " vom",
+      0.051
+     ]
+    ],
+    "tokens_most_aligned": [
+     " worse",
+     " frustrating",
+     " blamed",
+     " unable",
+     " frustrated",
+     " inability",
+     " enraged",
+     " Worse",
+     " trying",
+     " blames",
+     " Unable",
+     " worst",
+     " frustration",
+     " attempts",
+     " tries"
+    ],
+    "p_nn16_vs_null_isotropic": 0.004975124378109453,
+    "p_nn25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed100_vs_null_isotropic": 0.004975124378109453,
+    "p_nn16_vs_null_neutral_split": 0.004975124378109453,
+    "p_nn25_vs_null_neutral_split": 0.004975124378109453,
+    "p_signed25_vs_null_neutral_split": 0.004975124378109453,
+    "p_signed100_vs_null_neutral_split": 0.004975124378109453
+   },
+   "null_isotropic": {
+    "nn16": {
+     "mean": 0.04543529450893402,
+     "median": 0.04506027698516846,
+     "p95": 0.051009055227041245,
+     "max": 0.05820667743682861
+    },
+    "nn25": {
+     "mean": 0.06065547093749046,
+     "median": 0.06027829647064209,
+     "p95": 0.06721888482570648,
+     "max": 0.07448846101760864
+    },
+    "signed25": {
+     "mean": 0.08885634690523148,
+     "median": 0.08877885341644287,
+     "p95": 0.09534569829702377,
+     "max": 0.09948188066482544
+    },
+    "signed100": {
+     "mean": 0.2593095004558563,
+     "median": 0.25912392139434814,
+     "p95": 0.27040451765060425,
+     "max": 0.274761438369751
+    }
+   },
+   "null_neutral_split": {
+    "nn16": {
+     "mean": 0.06399918347597122,
+     "median": 0.06368952989578247,
+     "p95": 0.07356875389814377,
+     "max": 0.08177000284194946
+    },
+    "nn25": {
+     "mean": 0.08313394337892532,
+     "median": 0.08271408081054688,
+     "p95": 0.0954061970114708,
+     "max": 0.10487622022628784
+    },
+    "signed25": {
+     "mean": 0.12022380530834198,
+     "median": 0.12022387981414795,
+     "p95": 0.13017041981220245,
+     "max": 0.13972437381744385
+    },
+    "signed100": {
+     "mean": 0.307364284992218,
+     "median": 0.30795758962631226,
+     "p95": 0.32261157035827637,
+     "max": 0.33237195014953613
+    }
+   },
+   "within_valence_contrasts": {
+    "nn16": {
+     "mean": 0.06763092428445816,
+     "median": 0.06380635499954224,
+     "p95": 0.08384867012500763,
+     "max": 0.08453202247619629
+    },
+    "nn25": {
+     "mean": 0.08538132905960083,
+     "median": 0.08217877149581909,
+     "p95": 0.10218758136034012,
+     "max": 0.10315293073654175
+    },
+    "signed25": {
+     "mean": 0.12183550745248795,
+     "median": 0.12542349100112915,
+     "p95": 0.13574562966823578,
+     "max": 0.14039796590805054
+    },
+    "signed100": {
+     "mean": 0.30095338821411133,
+     "median": 0.2984060049057007,
+     "p95": 0.32275715470314026,
+     "max": 0.33247023820877075
+    }
+   },
+   "emotions": {
+    "nn16": {
+     "mean": 0.10910002142190933,
+     "median": 0.11032521724700928,
+     "p95": 0.1296488642692566,
+     "max": 0.1439463496208191
+    },
+    "nn25": {
+     "mean": 0.1312340795993805,
+     "median": 0.13310694694519043,
+     "p95": 0.153375506401062,
+     "max": 0.166673481464386
+    },
+    "signed25": {
+     "mean": 0.1799394190311432,
+     "median": 0.1822327971458435,
+     "p95": 0.2094685435295105,
+     "max": 0.22496181726455688
+    },
+    "signed100": {
+     "mean": 0.3653315603733063,
+     "median": 0.36737602949142456,
+     "p95": 0.39850547909736633,
+     "max": 0.4149823784828186
+    }
+   }
+  },
+  "jpp/L16": {
+   "valence_pos": {
+    "nn16": 0.06554043292999268,
+    "nn25": 0.08521592617034912,
+    "signed25": 0.15965086221694946,
+    "signed100": 0.3411770462989807,
+    "tokens_nn16": [
+     [
+      " satisfying",
+      0.082
+     ],
+     [
+      " sunlight",
+      0.078
+     ],
+     [
+      " into",
+      0.068
+     ],
+     [
+      "Quiet",
+      0.064
+     ],
+     [
+      "\u8212",
+      0.064
+     ],
+     [
+      "(),\n\n",
+      0.062
+     ],
+     [
+      " \u00e7al\u0131\u015fmalar",
+      0.059
+     ],
+     [
+      " stitching",
+      0.058
+     ],
+     [
+      ".done",
+      0.056
+     ],
+     [
+      "\ud558\uba70",
+      0.055
+     ],
+     [
+      " appropriate",
+      0.054
+     ],
+     [
+      " Fin",
+      0.053
+     ],
+     [
+      " transitions",
+      0.053
+     ],
+     [
+      " Freed",
+      0.053
+     ],
+     [
+      "Endian",
+      0.051
+     ],
+     [
+      " d\u00e0ng",
+      0.051
+     ]
+    ],
+    "tokens_most_aligned": [
+     "\u8212",
+     " satisfying",
+     " sunlight",
+     " d\u00e0ng",
+     ".done",
+     " \u043f\u043e\u0441\u0442\u0435\u043f",
+     "inished",
+     "-done",
+     "Quiet",
+     ".transition",
+     " \u00e7al\u0131\u015fmalar",
+     "Into",
+     "splice",
+     " \u043d\u0435\u043c\u043d\u043e\u0433\u043e",
+     " \u0431\u043b\u0430\u0433\u043e\u0434\u0430\u0440\u044f"
+    ],
+    "p_nn16_vs_null_isotropic": 0.004975124378109453,
+    "p_nn25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed100_vs_null_isotropic": 0.004975124378109453,
+    "p_nn16_vs_null_neutral_split": 0.3681592039800995,
+    "p_nn25_vs_null_neutral_split": 0.373134328358209,
+    "p_signed25_vs_null_neutral_split": 0.004975124378109453,
+    "p_signed100_vs_null_neutral_split": 0.004975124378109453
+   },
+   "valence_neg": {
+    "nn16": 0.09575629234313965,
+    "nn25": 0.11644548177719116,
+    "signed25": 0.15965086221694946,
+    "signed100": 0.3411770462989807,
+    "tokens_nn16": [
+     [
+      "!!!!",
+      0.087
+     ],
+     [
+      " cannot",
+      0.086
+     ],
+     [
+      " frustrating",
+      0.082
+     ],
+     [
+      " blamed",
+      0.077
+     ],
+     [
+      " worse",
+      0.07
+     ],
+     [
+      "Trying",
+      0.064
+     ],
+     [
+      " Anxiety",
+      0.062
+     ],
+     [
+      "\u00a3",
+      0.059
+     ],
+     [
+      " debacle",
+      0.059
+     ],
+     [
+      " postpon",
+      0.059
+     ],
+     [
+      " >&",
+      0.057
+     ],
+     [
+      "\u5bfc\u81f4",
+      0.057
+     ],
+     [
+      " enraged",
+      0.057
+     ],
+     [
+      "\uff0c\u800c\u4e14",
+      0.055
+     ],
+     [
+      " Nevertheless",
+      0.055
+     ],
+     [
+      "-site",
+      0.053
+     ]
+    ],
+    "tokens_most_aligned": [
+     " frustrating",
+     " blamed",
+     " worse",
+     " frustrated",
+     "!!!!",
+     " frustration",
+     " cannot",
+     " blames",
+     " unable",
+     " trying",
+     " inability",
+     " failed",
+     " fails",
+     " Worse",
+     " attempts"
+    ],
+    "p_nn16_vs_null_isotropic": 0.004975124378109453,
+    "p_nn25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed100_vs_null_isotropic": 0.004975124378109453,
+    "p_nn16_vs_null_neutral_split": 0.004975124378109453,
+    "p_nn25_vs_null_neutral_split": 0.004975124378109453,
+    "p_signed25_vs_null_neutral_split": 0.004975124378109453,
+    "p_signed100_vs_null_neutral_split": 0.004975124378109453
+   },
+   "null_isotropic": {
+    "nn16": {
+     "mean": 0.04649873077869415,
+     "median": 0.04636180400848389,
+     "p95": 0.05174209177494049,
+     "max": 0.05469769239425659
+    },
+    "nn25": {
+     "mean": 0.06279686093330383,
+     "median": 0.06279933452606201,
+     "p95": 0.06932833790779114,
+     "max": 0.07351469993591309
+    },
+    "signed25": {
+     "mean": 0.09031850844621658,
+     "median": 0.09027570486068726,
+     "p95": 0.09573256969451904,
+     "max": 0.09959375858306885
+    },
+    "signed100": {
+     "mean": 0.26683127880096436,
+     "median": 0.2662270665168762,
+     "p95": 0.2761487662792206,
+     "max": 0.2823747992515564
+    }
+   },
+   "null_neutral_split": {
+    "nn16": {
+     "mean": 0.06369840353727341,
+     "median": 0.06318944692611694,
+     "p95": 0.07307557016611099,
+     "max": 0.07886719703674316
+    },
+    "nn25": {
+     "mean": 0.08381524682044983,
+     "median": 0.08348417282104492,
+     "p95": 0.09477828443050385,
+     "max": 0.1021115779876709
+    },
+    "signed25": {
+     "mean": 0.11729442328214645,
+     "median": 0.1173444390296936,
+     "p95": 0.12815488874912262,
+     "max": 0.13613200187683105
+    },
+    "signed100": {
+     "mean": 0.30787819623947144,
+     "median": 0.30809134244918823,
+     "p95": 0.3215283155441284,
+     "max": 0.33276593685150146
+    }
+   },
+   "within_valence_contrasts": {
+    "nn16": {
+     "mean": 0.06881682574748993,
+     "median": 0.0619654655456543,
+     "p95": 0.08501746505498886,
+     "max": 0.08567219972610474
+    },
+    "nn25": {
+     "mean": 0.08805868774652481,
+     "median": 0.08115571737289429,
+     "p95": 0.10524726659059525,
+     "max": 0.10654342174530029
+    },
+    "signed25": {
+     "mean": 0.12314728647470474,
+     "median": 0.12527483701705933,
+     "p95": 0.13614171743392944,
+     "max": 0.1396579146385193
+    },
+    "signed100": {
+     "mean": 0.30228710174560547,
+     "median": 0.2980065941810608,
+     "p95": 0.31838107109069824,
+     "max": 0.3210451006889343
+    }
+   },
+   "emotions": {
+    "nn16": {
+     "mean": 0.11309358477592468,
+     "median": 0.11407244205474854,
+     "p95": 0.13572955131530762,
+     "max": 0.1543896198272705
+    },
+    "nn25": {
+     "mean": 0.13662801682949066,
+     "median": 0.13856494426727295,
+     "p95": 0.16001027822494507,
+     "max": 0.17880427837371826
+    },
+    "signed25": {
+     "mean": 0.18069128692150116,
+     "median": 0.18073856830596924,
+     "p95": 0.2107311189174652,
+     "max": 0.22454345226287842
+    },
+    "signed100": {
+     "mean": 0.37041059136390686,
+     "median": 0.3720057010650635,
+     "p95": 0.40006083250045776,
+     "max": 0.41098690032958984
+    }
+   }
+  },
+  "jpp/L20": {
+   "valence_pos": {
+    "nn16": 0.06484687328338623,
+    "nn25": 0.08243095874786377,
+    "signed25": 0.16119682788848877,
+    "signed100": 0.3446671962738037,
+    "tokens_nn16": [
+     [
+      " sunlight",
+      0.074
+     ],
+     [
+      " satisfying",
+      0.073
+     ],
+     [
+      "\u8212",
+      0.069
+     ],
+     [
+      " sessiz",
+      0.062
+     ],
+     [
+      "appropriate",
+      0.061
+     ],
+     [
+      " into",
+      0.061
+     ],
+     [
+      " EXPORT",
+      0.06
+     ],
+     [
+      "inished",
+      0.06
+     ],
+     [
+      " grayscale",
+      0.059
+     ],
+     [
+      "sounds",
+      0.056
+     ],
+     [
+      "\u4e00\u4e0b",
+      0.056
+     ],
+     [
+      " fclose",
+      0.051
+     ],
+     [
+      " pleasantly",
+      0.051
+     ],
+     [
+      " incidental",
+      0.05
+     ],
+     [
+      " ease",
+      0.048
+     ],
+     [
+      "ropolis",
+      0.046
+     ]
+    ],
+    "tokens_most_aligned": [
+     " satisfying",
+     " sunlight",
+     "\u8212",
+     " sessiz",
+     "inished",
+     " pleasantly",
+     " \u067e\u0627\u06cc\u0627\u0646",
+     " satisfied",
+     " easing",
+     "appropriate",
+     "\u4e00\u4e0b",
+     " pleasant",
+     "i\u0434",
+     "sounds",
+     "Noise"
+    ],
+    "p_nn16_vs_null_isotropic": 0.004975124378109453,
+    "p_nn25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed100_vs_null_isotropic": 0.004975124378109453,
+    "p_nn16_vs_null_neutral_split": 0.48258706467661694,
+    "p_nn25_vs_null_neutral_split": 0.5621890547263682,
+    "p_signed25_vs_null_neutral_split": 0.004975124378109453,
+    "p_signed100_vs_null_neutral_split": 0.014925373134328358
+   },
+   "valence_neg": {
+    "nn16": 0.09232723712921143,
+    "nn25": 0.11042970418930054,
+    "signed25": 0.16119682788848877,
+    "signed100": 0.3446671962738037,
+    "tokens_nn16": [
+     [
+      " frustrating",
+      0.091
+     ],
+     [
+      "\u65e0\u6cd5",
+      0.077
+     ],
+     [
+      " failed",
+      0.075
+     ],
+     [
+      " enraged",
+      0.068
+     ],
+     [
+      "!!!!",
+      0.068
+     ],
+     [
+      " blamed",
+      0.065
+     ],
+     [
+      " anxiety",
+      0.065
+     ],
+     [
+      " tries",
+      0.062
+     ],
+     [
+      " worse",
+      0.062
+     ],
+     [
+      " timeouts",
+      0.057
+     ],
+     [
+      " AGAIN",
+      0.052
+     ],
+     [
+      " d\u00e9j\u00e0",
+      0.052
+     ],
+     [
+      "\uff0c\u800c\u4e14",
+      0.052
+     ],
+     [
+      " FAQs",
+      0.052
+     ],
+     [
+      "Alternative",
+      0.049
+     ],
+     [
+      " incorrect",
+      0.048
+     ]
+    ],
+    "tokens_most_aligned": [
+     " frustrating",
+     " failed",
+     " frustrated",
+     " frustration",
+     " unable",
+     " fails",
+     " inability",
+     " worse",
+     " cannot",
+     " tries",
+     " trying",
+     " fail",
+     " attempts",
+     " tried",
+     "Failed"
+    ],
+    "p_nn16_vs_null_isotropic": 0.004975124378109453,
+    "p_nn25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed100_vs_null_isotropic": 0.004975124378109453,
+    "p_nn16_vs_null_neutral_split": 0.004975124378109453,
+    "p_nn25_vs_null_neutral_split": 0.004975124378109453,
+    "p_signed25_vs_null_neutral_split": 0.004975124378109453,
+    "p_signed100_vs_null_neutral_split": 0.014925373134328358
+   },
+   "null_isotropic": {
+    "nn16": {
+     "mean": 0.04689371958374977,
+     "median": 0.0463484525680542,
+     "p95": 0.052602898329496384,
+     "max": 0.05393636226654053
+    },
+    "nn25": {
+     "mean": 0.06312345713376999,
+     "median": 0.0626535415649414,
+     "p95": 0.07007858902215958,
+     "max": 0.07200860977172852
+    },
+    "signed25": {
+     "mean": 0.09135379642248154,
+     "median": 0.09127140045166016,
+     "p95": 0.09669524431228638,
+     "max": 0.09955430030822754
+    },
+    "signed100": {
+     "mean": 0.27575331926345825,
+     "median": 0.27552998065948486,
+     "p95": 0.28401461243629456,
+     "max": 0.2915576100349426
+    }
+   },
+   "null_neutral_split": {
+    "nn16": {
+     "mean": 0.06464063376188278,
+     "median": 0.06437039375305176,
+     "p95": 0.07594995200634003,
+     "max": 0.08229941129684448
+    },
+    "nn25": {
+     "mean": 0.08419857174158096,
+     "median": 0.08379673957824707,
+     "p95": 0.09771120548248291,
+     "max": 0.10561627149581909
+    },
+    "signed25": {
+     "mean": 0.12039875239133835,
+     "median": 0.11969417333602905,
+     "p95": 0.1327703297138214,
+     "max": 0.14552199840545654
+    },
+    "signed100": {
+     "mean": 0.3183485269546509,
+     "median": 0.31803256273269653,
+     "p95": 0.3350619077682495,
+     "max": 0.34766554832458496
+    }
+   },
+   "within_valence_contrasts": {
+    "nn16": {
+     "mean": 0.06857795268297195,
+     "median": 0.062070369720458984,
+     "p95": 0.08818839490413666,
+     "max": 0.09167397022247314
+    },
+    "nn25": {
+     "mean": 0.08622175455093384,
+     "median": 0.07836663722991943,
+     "p95": 0.10836254805326462,
+     "max": 0.11394774913787842
+    },
+    "signed25": {
+     "mean": 0.12383762747049332,
+     "median": 0.12241315841674805,
+     "p95": 0.14405538141727448,
+     "max": 0.14847230911254883
+    },
+    "signed100": {
+     "mean": 0.30444392561912537,
+     "median": 0.29405921697616577,
+     "p95": 0.3342404365539551,
+     "max": 0.34202492237091064
+    }
+   },
+   "emotions": {
+    "nn16": {
+     "mean": 0.10171612352132797,
+     "median": 0.10157519578933716,
+     "p95": 0.12804916501045227,
+     "max": 0.1461278796195984
+    },
+    "nn25": {
+     "mean": 0.12164207547903061,
+     "median": 0.12084454298019409,
+     "p95": 0.15008166432380676,
+     "max": 0.16564112901687622
+    },
+    "signed25": {
+     "mean": 0.1744537204504013,
+     "median": 0.17378783226013184,
+     "p95": 0.20554955303668976,
+     "max": 0.2321988344192505
+    },
+    "signed100": {
+     "mean": 0.36261120438575745,
+     "median": 0.3619692325592041,
+     "p95": 0.39616113901138306,
+     "max": 0.4209015369415283
+    }
+   }
+  },
+  "jpp/L24": {
+   "valence_pos": {
+    "nn16": 0.0595095157623291,
+    "nn25": 0.07658523321151733,
+    "signed25": 0.14587676525115967,
+    "signed100": 0.3216508626937866,
+    "tokens_nn16": [
+     [
+      " satisfying",
+      0.078
+     ],
+     [
+      "\u8212",
+      0.069
+     ],
+     [
+      " handful",
+      0.065
+     ],
+     [
+      " sunlight",
+      0.064
+     ],
+     [
+      " Into",
+      0.064
+     ],
+     [
+      " flavors",
+      0.062
+     ],
+     [
+      "File",
+      0.058
+     ],
+     [
+      " sessiz",
+      0.058
+     ],
+     [
+      " segue",
+      0.053
+     ],
+     [
+      " ZZ",
+      0.053
+     ],
+     [
+      "Assertions",
+      0.052
+     ],
+     [
+      " rooft",
+      0.052
+     ],
+     [
+      " brightness",
+      0.051
+     ],
+     [
+      " NotImplementedException",
+      0.05
+     ],
+     [
+      "(\"//",
+      0.049
+     ],
+     [
+      "Expense",
+      0.047
+     ]
+    ],
+    "tokens_most_aligned": [
+     " satisfying",
+     " sunlight",
+     " Satisfaction",
+     "\u8212",
+     " pleasantly",
+     " sessiz",
+     " satisfies",
+     " handful",
+     " pleasant",
+     " brightness",
+     "Brightness",
+     " satisfied",
+     " easing",
+     " satisfaction",
+     "Assertions"
+    ],
+    "p_nn16_vs_null_isotropic": 0.004975124378109453,
+    "p_nn25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed100_vs_null_isotropic": 0.004975124378109453,
+    "p_nn16_vs_null_neutral_split": 0.572139303482587,
+    "p_nn25_vs_null_neutral_split": 0.6517412935323383,
+    "p_signed25_vs_null_neutral_split": 0.004975124378109453,
+    "p_signed100_vs_null_neutral_split": 0.05970149253731343
+   },
+   "valence_neg": {
+    "nn16": 0.08288365602493286,
+    "nn25": 0.09992557764053345,
+    "signed25": 0.14587676525115967,
+    "signed100": 0.3216508626937866,
+    "tokens_nn16": [
+     [
+      " anxiety",
+      0.087
+     ],
+     [
+      " frustrating",
+      0.082
+     ],
+     [
+      " worse",
+      0.068
+     ],
+     [
+      " enraged",
+      0.064
+     ],
+     [
+      " unable",
+      0.062
+     ],
+     [
+      " hyster",
+      0.06
+     ],
+     [
+      "!!!!",
+      0.058
+     ],
+     [
+      "Failed",
+      0.057
+     ],
+     [
+      " stuck",
+      0.057
+     ],
+     [
+      "\u5c1a",
+      0.057
+     ],
+     [
+      "Trying",
+      0.053
+     ],
+     [
+      " Whatsapp",
+      0.052
+     ],
+     [
+      " delaying",
+      0.052
+     ],
+     [
+      " blaming",
+      0.051
+     ],
+     [
+      " AGAIN",
+      0.051
+     ],
+     [
+      "\u00a3",
+      0.05
+     ]
+    ],
+    "tokens_most_aligned": [
+     " frustrating",
+     " frustrated",
+     " unable",
+     " failed",
+     " frustration",
+     " anxiety",
+     " worse",
+     " inability",
+     " trying",
+     " attempting",
+     " fails",
+     " attempts",
+     " enraged",
+     " cannot",
+     " panic"
+    ],
+    "p_nn16_vs_null_isotropic": 0.004975124378109453,
+    "p_nn25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed100_vs_null_isotropic": 0.004975124378109453,
+    "p_nn16_vs_null_neutral_split": 0.004975124378109453,
+    "p_nn25_vs_null_neutral_split": 0.004975124378109453,
+    "p_signed25_vs_null_neutral_split": 0.004975124378109453,
+    "p_signed100_vs_null_neutral_split": 0.05970149253731343
+   },
+   "null_isotropic": {
+    "nn16": {
+     "mean": 0.04634832218289375,
+     "median": 0.04654282331466675,
+     "p95": 0.052149590104818344,
+     "max": 0.05603992938995361
+    },
+    "nn25": {
+     "mean": 0.06254806369543076,
+     "median": 0.06278473138809204,
+     "p95": 0.06878145784139633,
+     "max": 0.07472127676010132
+    },
+    "signed25": {
+     "mean": 0.09013629704713821,
+     "median": 0.08985245227813721,
+     "p95": 0.0953388512134552,
+     "max": 0.10351800918579102
+    },
+    "signed100": {
+     "mean": 0.268098920583725,
+     "median": 0.26775413751602173,
+     "p95": 0.2779766917228699,
+     "max": 0.28617751598358154
+    }
+   },
+   "null_neutral_split": {
+    "nn16": {
+     "mean": 0.06012701615691185,
+     "median": 0.06028205156326294,
+     "p95": 0.0679464042186737,
+     "max": 0.07423853874206543
+    },
+    "nn25": {
+     "mean": 0.07863809168338776,
+     "median": 0.07920098304748535,
+     "p95": 0.08771100640296936,
+     "max": 0.09561026096343994
+    },
+    "signed25": {
+     "mean": 0.11451656371355057,
+     "median": 0.11382442712783813,
+     "p95": 0.12652267515659332,
+     "max": 0.14012205600738525
+    },
+    "signed100": {
+     "mean": 0.3061434030532837,
+     "median": 0.3054355978965759,
+     "p95": 0.3216727375984192,
+     "max": 0.3389487862586975
+    }
+   },
+   "within_valence_contrasts": {
+    "nn16": {
+     "mean": 0.06436718255281448,
+     "median": 0.06334257125854492,
+     "p95": 0.07823259383440018,
+     "max": 0.0809941291809082
+    },
+    "nn25": {
+     "mean": 0.08188614249229431,
+     "median": 0.08051478862762451,
+     "p95": 0.09665465354919434,
+     "max": 0.10010862350463867
+    },
+    "signed25": {
+     "mean": 0.11821100115776062,
+     "median": 0.1197630763053894,
+     "p95": 0.1310870349407196,
+     "max": 0.13173478841781616
+    },
+    "signed100": {
+     "mean": 0.29105260968208313,
+     "median": 0.2933879494667053,
+     "p95": 0.30554890632629395,
+     "max": 0.30991196632385254
+    }
+   },
+   "emotions": {
+    "nn16": {
+     "mean": 0.10489105433225632,
+     "median": 0.10183262825012207,
+     "p95": 0.1303495168685913,
+     "max": 0.14864468574523926
+    },
+    "nn25": {
+     "mean": 0.12501287460327148,
+     "median": 0.12248837947845459,
+     "p95": 0.15055590867996216,
+     "max": 0.1700139045715332
+    },
+    "signed25": {
+     "mean": 0.1758577972650528,
+     "median": 0.1771833896636963,
+     "p95": 0.19639453291893005,
+     "max": 0.20991259813308716
+    },
+    "signed100": {
+     "mean": 0.36141371726989746,
+     "median": 0.3610261082649231,
+     "p95": 0.38610389828681946,
+     "max": 0.3985903263092041
+    }
+   }
+  },
+  "jpp/L28": {
+   "valence_pos": {
+    "nn16": 0.059509098529815674,
+    "nn25": 0.07378393411636353,
+    "signed25": 0.17454886436462402,
+    "signed100": 0.3547930121421814,
+    "tokens_nn16": [
+     [
+      " flavors",
+      0.068
+     ],
+     [
+      "\u8212",
+      0.067
+     ],
+     [
+      " satisfying",
+      0.063
+     ],
+     [
+      " sunlight",
+      0.062
+     ],
+     [
+      " neat",
+      0.055
+     ],
+     [
+      "\u0947\ufffd",
+      0.05
+     ],
+     [
+      " taxonomy",
+      0.05
+     ],
+     [
+      " accomplishments",
+      0.049
+     ],
+     [
+      "i\u0434",
+      0.049
+     ],
+     [
+      " sessiz",
+      0.048
+     ],
+     [
+      " \uc2b9",
+      0.047
+     ],
+     [
+      " slide",
+      0.047
+     ],
+     [
+      " ///\n",
+      0.047
+     ],
+     [
+      "into",
+      0.045
+     ],
+     [
+      " Done",
+      0.045
+     ],
+     [
+      "Expense",
+      0.044
+     ]
+    ],
+    "tokens_most_aligned": [
+     " satisfying",
+     " flavors",
+     "\u8212",
+     " sunlight",
+     " flavored",
+     " brightness",
+     " favorable",
+     " satisfied",
+     " flavor",
+     " flavorful",
+     " sessiz",
+     " colors",
+     " tidy",
+     " grayscale",
+     " pleasant"
+    ],
+    "p_nn16_vs_null_isotropic": 0.004975124378109453,
+    "p_nn25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed100_vs_null_isotropic": 0.004975124378109453,
+    "p_nn16_vs_null_neutral_split": 0.05472636815920398,
+    "p_nn25_vs_null_neutral_split": 0.03980099502487562,
+    "p_signed25_vs_null_neutral_split": 0.004975124378109453,
+    "p_signed100_vs_null_neutral_split": 0.004975124378109453
+   },
+   "valence_neg": {
+    "nn16": 0.09109580516815186,
+    "nn25": 0.10288465023040771,
+    "signed25": 0.17454886436462402,
+    "signed100": 0.3547930121421814,
+    "tokens_nn16": [
+     [
+      " anxiety",
+      0.087
+     ],
+     [
+      " frustrating",
+      0.086
+     ],
+     [
+      " worse",
+      0.068
+     ],
+     [
+      " blaming",
+      0.065
+     ],
+     [
+      " AGAIN",
+      0.063
+     ],
+     [
+      " refused",
+      0.061
+     ],
+     [
+      " attempting",
+      0.06
+     ],
+     [
+      "\u5bfc\u81f4",
+      0.059
+     ],
+     [
+      " enraged",
+      0.055
+     ],
+     [
+      "\u5c1a",
+      0.052
+     ],
+     [
+      " Frozen",
+      0.051
+     ],
+     [
+      "\u6839\u672c",
+      0.05
+     ],
+     [
+      "\u65e0\u6cd5",
+      0.049
+     ],
+     [
+      " stuck",
+      0.048
+     ],
+     [
+      " errorCallback",
+      0.047
+     ],
+     [
+      "\u4e09",
+      0.045
+     ]
+    ],
+    "tokens_most_aligned": [
+     " frustrating",
+     " frustrated",
+     " frustration",
+     " refused",
+     " worse",
+     " unable",
+     " attempting",
+     " desperately",
+     " blamed",
+     " blaming",
+     " stubborn",
+     " failed",
+     " trying",
+     " infuri",
+     " refuses"
+    ],
+    "p_nn16_vs_null_isotropic": 0.004975124378109453,
+    "p_nn25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed100_vs_null_isotropic": 0.004975124378109453,
+    "p_nn16_vs_null_neutral_split": 0.004975124378109453,
+    "p_nn25_vs_null_neutral_split": 0.004975124378109453,
+    "p_signed25_vs_null_neutral_split": 0.004975124378109453,
+    "p_signed100_vs_null_neutral_split": 0.004975124378109453
+   },
+   "null_isotropic": {
+    "nn16": {
+     "mean": 0.04074852168560028,
+     "median": 0.040825486183166504,
+     "p95": 0.046335890889167786,
+     "max": 0.04901176691055298
+    },
+    "nn25": {
+     "mean": 0.05249433219432831,
+     "median": 0.05233079195022583,
+     "p95": 0.05933922156691551,
+     "max": 0.0625188946723938
+    },
+    "signed25": {
+     "mean": 0.09131452441215515,
+     "median": 0.09125101566314697,
+     "p95": 0.09628266096115112,
+     "max": 0.10071468353271484
+    },
+    "signed100": {
+     "mean": 0.2791598439216614,
+     "median": 0.2795480489730835,
+     "p95": 0.2876819670200348,
+     "max": 0.2926587462425232
+    }
+   },
+   "null_neutral_split": {
+    "nn16": {
+     "mean": 0.05114202946424484,
+     "median": 0.05096215009689331,
+     "p95": 0.05924240127205849,
+     "max": 0.07063168287277222
+    },
+    "nn25": {
+     "mean": 0.063497394323349,
+     "median": 0.06383383274078369,
+     "p95": 0.07298193871974945,
+     "max": 0.08439916372299194
+    },
+    "signed25": {
+     "mean": 0.11792267113924026,
+     "median": 0.11724436283111572,
+     "p95": 0.12952382862567902,
+     "max": 0.13607144355773926
+    },
+    "signed100": {
+     "mean": 0.31858202815055847,
+     "median": 0.317588210105896,
+     "p95": 0.3337741494178772,
+     "max": 0.3435807228088379
+    }
+   },
+   "within_valence_contrasts": {
+    "nn16": {
+     "mean": 0.06794354319572449,
+     "median": 0.06780552864074707,
+     "p95": 0.07914325594902039,
+     "max": 0.08056604862213135
+    },
+    "nn25": {
+     "mean": 0.08131001144647598,
+     "median": 0.08157587051391602,
+     "p95": 0.09488771110773087,
+     "max": 0.09617632627487183
+    },
+    "signed25": {
+     "mean": 0.13807915151119232,
+     "median": 0.1447392702102661,
+     "p95": 0.15223167836666107,
+     "max": 0.15287208557128906
+    },
+    "signed100": {
+     "mean": 0.3248623311519623,
+     "median": 0.3306541442871094,
+     "p95": 0.34346139430999756,
+     "max": 0.3436327576637268
+    }
+   },
+   "emotions": {
+    "nn16": {
+     "mean": 0.09873796254396439,
+     "median": 0.09954416751861572,
+     "p95": 0.12084096670150757,
+     "max": 0.12972354888916016
+    },
+    "nn25": {
+     "mean": 0.11336257308721542,
+     "median": 0.11426222324371338,
+     "p95": 0.1355932354927063,
+     "max": 0.14399439096450806
+    },
+    "signed25": {
+     "mean": 0.19906197488307953,
+     "median": 0.19786953926086426,
+     "p95": 0.22425034642219543,
+     "max": 0.242842435836792
+    },
+    "signed100": {
+     "mean": 0.39556819200515747,
+     "median": 0.3969634771347046,
+     "p95": 0.41859278082847595,
+     "max": 0.43274879455566406
+    }
+   }
+  },
+  "rlens/L15": {
+   "valence_pos": {
+    "nn16": 0.07810413837432861,
+    "nn25": 0.0990602970123291,
+    "signed25": 0.18519318103790283,
+    "signed100": 0.37755805253982544,
+    "tokens_nn16": [
+     [
+      " satisfying",
+      0.08
+     ],
+     [
+      " incidental",
+      0.076
+     ],
+     [
+      "\u8212",
+      0.075
+     ],
+     [
+      " Harbor",
+      0.074
+     ],
+     [
+      "\u4e00\u4e0b",
+      0.068
+     ],
+     [
+      " soundtrack",
+      0.064
+     ],
+     [
+      " sunlight",
+      0.064
+     ],
+     [
+      "/\"\n\n",
+      0.063
+     ],
+     [
+      " Dollars",
+      0.062
+     ],
+     [
+      " D\u00edky",
+      0.061
+     ],
+     [
+      "uvo",
+      0.06
+     ],
+     [
+      "Trad",
+      0.06
+     ],
+     [
+      " \u067e\u0627\u06cc\u0627\u0646",
+      0.058
+     ],
+     [
+      " fluorescence",
+      0.058
+     ],
+     [
+      "inished",
+      0.057
+     ],
+     [
+      "\ud558\uba70",
+      0.056
+     ]
+    ],
+    "tokens_most_aligned": [
+     "\u8212",
+     "inished",
+     " \u067e\u0627\u06cc\u0627\u0646",
+     "uvo",
+     " D\u00edky",
+     "_done",
+     " dank",
+     "owell",
+     " vbCrLf",
+     " dap",
+     " soundtrack",
+     " sayesinde",
+     ".done",
+     " \u00e7al\u0131\u015fmalar",
+     "urities"
+    ],
+    "p_nn16_vs_null_isotropic": 0.004975124378109453,
+    "p_nn25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed100_vs_null_isotropic": 0.004975124378109453,
+    "p_nn16_vs_null_neutral_split": 0.014925373134328358,
+    "p_nn25_vs_null_neutral_split": 0.009950248756218905,
+    "p_signed25_vs_null_neutral_split": 0.004975124378109453,
+    "p_signed100_vs_null_neutral_split": 0.004975124378109453
+   },
+   "valence_neg": {
+    "nn16": 0.11898314952850342,
+    "nn25": 0.13908004760742188,
+    "signed25": 0.18519318103790283,
+    "signed100": 0.37755805253982544,
+    "tokens_nn16": [
+     [
+      "!!!!",
+      0.102
+     ],
+     [
+      " worse",
+      0.095
+     ],
+     [
+      "\u5bfc\u81f4",
+      0.084
+     ],
+     [
+      " enraged",
+      0.079
+     ],
+     [
+      " procrast",
+      0.077
+     ],
+     [
+      " dilemma",
+      0.071
+     ],
+     [
+      " blames",
+      0.068
+     ],
+     [
+      " Attempts",
+      0.064
+     ],
+     [
+      " Unable",
+      0.064
+     ],
+     [
+      " expired",
+      0.063
+     ],
+     [
+      " necesita",
+      0.061
+     ],
+     [
+      " FAQs",
+      0.061
+     ],
+     [
+      " v\u00f2ng",
+      0.06
+     ],
+     [
+      " errorCallback",
+      0.059
+     ],
+     [
+      "\u5c1a",
+      0.057
+     ],
+     [
+      " :(",
+      0.057
+     ]
+    ],
+    "tokens_most_aligned": [
+     " worse",
+     " inability",
+     " unable",
+     " fails",
+     " blames",
+     " blamed",
+     " failed",
+     " frustrating",
+     " refuses",
+     " cannot",
+     " blaming",
+     " fail",
+     " Unable",
+     " frustrated",
+     " worst"
+    ],
+    "p_nn16_vs_null_isotropic": 0.004975124378109453,
+    "p_nn25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed100_vs_null_isotropic": 0.004975124378109453,
+    "p_nn16_vs_null_neutral_split": 0.004975124378109453,
+    "p_nn25_vs_null_neutral_split": 0.004975124378109453,
+    "p_signed25_vs_null_neutral_split": 0.004975124378109453,
+    "p_signed100_vs_null_neutral_split": 0.004975124378109453
+   },
+   "null_isotropic": {
+    "nn16": {
+     "mean": 0.043002981692552567,
+     "median": 0.042819976806640625,
+     "p95": 0.04892370477318764,
+     "max": 0.05447739362716675
+    },
+    "nn25": {
+     "mean": 0.05628541111946106,
+     "median": 0.056121110916137695,
+     "p95": 0.06330293416976929,
+     "max": 0.06963193416595459
+    },
+    "signed25": {
+     "mean": 0.08912556618452072,
+     "median": 0.08868610858917236,
+     "p95": 0.09513626992702484,
+     "max": 0.09891819953918457
+    },
+    "signed100": {
+     "mean": 0.2629624307155609,
+     "median": 0.26262980699539185,
+     "p95": 0.27344265580177307,
+     "max": 0.2779463529586792
+    }
+   },
+   "null_neutral_split": {
+    "nn16": {
+     "mean": 0.06227399781346321,
+     "median": 0.06166577339172363,
+     "p95": 0.07174397259950638,
+     "max": 0.08703434467315674
+    },
+    "nn25": {
+     "mean": 0.07939115166664124,
+     "median": 0.07870250940322876,
+     "p95": 0.09113410860300064,
+     "max": 0.10825109481811523
+    },
+    "signed25": {
+     "mean": 0.1230287104845047,
+     "median": 0.1229366660118103,
+     "p95": 0.13394318521022797,
+     "max": 0.14669466018676758
+    },
+    "signed100": {
+     "mean": 0.31363219022750854,
+     "median": 0.3139873147010803,
+     "p95": 0.3285408914089203,
+     "max": 0.3513484597206116
+    }
+   },
+   "within_valence_contrasts": {
+    "nn16": {
+     "mean": 0.0795094296336174,
+     "median": 0.0724446177482605,
+     "p95": 0.09726335853338242,
+     "max": 0.09948152303695679
+    },
+    "nn25": {
+     "mean": 0.09862765669822693,
+     "median": 0.0908287763595581,
+     "p95": 0.11848224699497223,
+     "max": 0.1219140887260437
+    },
+    "signed25": {
+     "mean": 0.1392611861228943,
+     "median": 0.14292031526565552,
+     "p95": 0.15560616552829742,
+     "max": 0.16614550352096558
+    },
+    "signed100": {
+     "mean": 0.3217998445034027,
+     "median": 0.31969159841537476,
+     "p95": 0.34258154034614563,
+     "max": 0.35401469469070435
+    }
+   },
+   "emotions": {
+    "nn16": {
+     "mean": 0.10748682171106339,
+     "median": 0.1102094054222107,
+     "p95": 0.12686750292778015,
+     "max": 0.14334309101104736
+    },
+    "nn25": {
+     "mean": 0.12838517129421234,
+     "median": 0.13140881061553955,
+     "p95": 0.148125559091568,
+     "max": 0.16199225187301636
+    },
+    "signed25": {
+     "mean": 0.1880514770746231,
+     "median": 0.1876540184020996,
+     "p95": 0.224159836769104,
+     "max": 0.23388314247131348
+    },
+    "signed100": {
+     "mean": 0.37502628564834595,
+     "median": 0.3765181303024292,
+     "p95": 0.40942272543907166,
+     "max": 0.4214290380477905
+    }
+   }
+  },
+  "rlens/L16": {
+   "valence_pos": {
+    "nn16": 0.07575029134750366,
+    "nn25": 0.09672737121582031,
+    "signed25": 0.18813449144363403,
+    "signed100": 0.37693625688552856,
+    "tokens_nn16": [
+     [
+      " satisfying",
+      0.083
+     ],
+     [
+      " appropriate",
+      0.078
+     ],
+     [
+      " sunlight",
+      0.077
+     ],
+     [
+      "\u8212",
+      0.072
+     ],
+     [
+      " transitions",
+      0.064
+     ],
+     [
+      "inished",
+      0.063
+     ],
+     [
+      "_done",
+      0.062
+     ],
+     [
+      " zipfile",
+      0.061
+     ],
+     [
+      "uvo",
+      0.061
+     ],
+     [
+      " D\u00edky",
+      0.059
+     ],
+     [
+      " Dollars",
+      0.059
+     ],
+     [
+      "totals",
+      0.058
+     ],
+     [
+      "\u7136\u540e",
+      0.058
+     ],
+     [
+      "/\"\n\n",
+      0.057
+     ],
+     [
+      " Yin",
+      0.056
+     ],
+     [
+      "Noise",
+      0.054
+     ]
+    ],
+    "tokens_most_aligned": [
+     "inished",
+     "\u8212",
+     "_done",
+     "-done",
+     " \u067e\u0627\u06cc\u0627\u0646",
+     ".done",
+     " dank",
+     " D\u00edky",
+     "(done",
+     "uvo",
+     "owell",
+     "\u633a",
+     " satisfying",
+     " sunlight",
+     " \u00e7al\u0131\u015fmalar"
+    ],
+    "p_nn16_vs_null_isotropic": 0.004975124378109453,
+    "p_nn25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed100_vs_null_isotropic": 0.004975124378109453,
+    "p_nn16_vs_null_neutral_split": 0.01990049751243781,
+    "p_nn25_vs_null_neutral_split": 0.014925373134328358,
+    "p_signed25_vs_null_neutral_split": 0.004975124378109453,
+    "p_signed100_vs_null_neutral_split": 0.004975124378109453
+   },
+   "valence_neg": {
+    "nn16": 0.11611205339431763,
+    "nn25": 0.13639205694198608,
+    "signed25": 0.18813449144363403,
+    "signed100": 0.37693625688552856,
+    "tokens_nn16": [
+     [
+      "!!!!",
+      0.103
+     ],
+     [
+      " worse",
+      0.074
+     ],
+     [
+      " blames",
+      0.072
+     ],
+     [
+      "\u65e0\u6cd5",
+      0.071
+     ],
+     [
+      "\u5bfc\u81f4",
+      0.07
+     ],
+     [
+      " delaying",
+      0.068
+     ],
+     [
+      "Trying",
+      0.066
+     ],
+     [
+      " frustrating",
+      0.066
+     ],
+     [
+      " \u0917\u0932\u0924",
+      0.066
+     ],
+     [
+      " :(",
+      0.065
+     ],
+     [
+      " Scheduled",
+      0.064
+     ],
+     [
+      " dilemma",
+      0.063
+     ],
+     [
+      " enraged",
+      0.061
+     ],
+     [
+      "\u00a3",
+      0.054
+     ],
+     [
+      " Nevertheless",
+      0.054
+     ],
+     [
+      " jeopard",
+      0.05
+     ]
+    ],
+    "tokens_most_aligned": [
+     " frustrating",
+     " blamed",
+     " unable",
+     " worse",
+     " failed",
+     " cannot",
+     " fails",
+     " inability",
+     " blames",
+     " frustrated",
+     " refuses",
+     " fail",
+     "!!!!",
+     " blaming",
+     " frustration"
+    ],
+    "p_nn16_vs_null_isotropic": 0.004975124378109453,
+    "p_nn25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed100_vs_null_isotropic": 0.004975124378109453,
+    "p_nn16_vs_null_neutral_split": 0.004975124378109453,
+    "p_nn25_vs_null_neutral_split": 0.004975124378109453,
+    "p_signed25_vs_null_neutral_split": 0.004975124378109453,
+    "p_signed100_vs_null_neutral_split": 0.004975124378109453
+   },
+   "null_isotropic": {
+    "nn16": {
+     "mean": 0.043714772909879684,
+     "median": 0.04390251636505127,
+     "p95": 0.04916863515973091,
+     "max": 0.05289614200592041
+    },
+    "nn25": {
+     "mean": 0.057721395045518875,
+     "median": 0.057729482650756836,
+     "p95": 0.0644444078207016,
+     "max": 0.06896960735321045
+    },
+    "signed25": {
+     "mean": 0.09025417268276215,
+     "median": 0.09016913175582886,
+     "p95": 0.09507244825363159,
+     "max": 0.09873193502426147
+    },
+    "signed100": {
+     "mean": 0.26814448833465576,
+     "median": 0.2684268355369568,
+     "p95": 0.27750876545906067,
+     "max": 0.2852877378463745
+    }
+   },
+   "null_neutral_split": {
+    "nn16": {
+     "mean": 0.061946943402290344,
+     "median": 0.06166279315948486,
+     "p95": 0.0711248368024826,
+     "max": 0.07782614231109619
+    },
+    "nn25": {
+     "mean": 0.0797354131937027,
+     "median": 0.0795210599899292,
+     "p95": 0.09102372825145721,
+     "max": 0.09876751899719238
+    },
+    "signed25": {
+     "mean": 0.1205907091498375,
+     "median": 0.12069720029830933,
+     "p95": 0.13132402300834656,
+     "max": 0.1358400583267212
+    },
+    "signed100": {
+     "mean": 0.3154603838920593,
+     "median": 0.3153113126754761,
+     "p95": 0.33211785554885864,
+     "max": 0.34266799688339233
+    }
+   },
+   "within_valence_contrasts": {
+    "nn16": {
+     "mean": 0.07887906581163406,
+     "median": 0.06967920064926147,
+     "p95": 0.09947289526462555,
+     "max": 0.10061419010162354
+    },
+    "nn25": {
+     "mean": 0.09805034846067429,
+     "median": 0.08856236934661865,
+     "p95": 0.12017074227333069,
+     "max": 0.12218749523162842
+    },
+    "signed25": {
+     "mean": 0.13959641754627228,
+     "median": 0.1394810676574707,
+     "p95": 0.15905922651290894,
+     "max": 0.16303902864456177
+    },
+    "signed100": {
+     "mean": 0.32375529408454895,
+     "median": 0.3191183805465698,
+     "p95": 0.3470489978790283,
+     "max": 0.3524835705757141
+    }
+   },
+   "emotions": {
+    "nn16": {
+     "mean": 0.11193573474884033,
+     "median": 0.11346018314361572,
+     "p95": 0.13235756754875183,
+     "max": 0.15206825733184814
+    },
+    "nn25": {
+     "mean": 0.13310818374156952,
+     "median": 0.13586366176605225,
+     "p95": 0.15334901213645935,
+     "max": 0.17192012071609497
+    },
+    "signed25": {
+     "mean": 0.1935691237449646,
+     "median": 0.19364523887634277,
+     "p95": 0.22508707642555237,
+     "max": 0.2372051477432251
+    },
+    "signed100": {
+     "mean": 0.3818943500518799,
+     "median": 0.38179850578308105,
+     "p95": 0.4102916419506073,
+     "max": 0.42969948053359985
+    }
+   }
+  },
+  "rlens/L20": {
+   "valence_pos": {
+    "nn16": 0.0748322606086731,
+    "nn25": 0.09358036518096924,
+    "signed25": 0.18493831157684326,
+    "signed100": 0.37911325693130493,
+    "tokens_nn16": [
+     [
+      " satisfying",
+      0.081
+     ],
+     [
+      " sunlight",
+      0.081
+     ],
+     [
+      "\u8212",
+      0.08
+     ],
+     [
+      "appropriate",
+      0.065
+     ],
+     [
+      " sessiz",
+      0.061
+     ],
+     [
+      " grayscale",
+      0.061
+     ],
+     [
+      "inished",
+      0.059
+     ],
+     [
+      "\u4e00\u4e0b",
+      0.058
+     ],
+     [
+      "sounds",
+      0.056
+     ],
+     [
+      " Into",
+      0.055
+     ],
+     [
+      " pleasantly",
+      0.055
+     ],
+     [
+      "urities",
+      0.055
+     ],
+     [
+      " EXPORT",
+      0.054
+     ],
+     [
+      " taxonomy",
+      0.05
+     ],
+     [
+      "_done",
+      0.05
+     ],
+     [
+      " \uc790\ub3d9",
+      0.05
+     ]
+    ],
+    "tokens_most_aligned": [
+     "\u8212",
+     " satisfying",
+     " sessiz",
+     " sunlight",
+     "inished",
+     " pleasantly",
+     " \u067e\u0627\u06cc\u0627\u0646",
+     "\u4e00\u4e0b",
+     "appropriate",
+     "Noise",
+     " satisfied",
+     "i\u0434",
+     " sayesinde",
+     "_noise",
+     "_done"
+    ],
+    "p_nn16_vs_null_isotropic": 0.004975124378109453,
+    "p_nn25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed100_vs_null_isotropic": 0.004975124378109453,
+    "p_nn16_vs_null_neutral_split": 0.0945273631840796,
+    "p_nn25_vs_null_neutral_split": 0.14925373134328357,
+    "p_signed25_vs_null_neutral_split": 0.004975124378109453,
+    "p_signed100_vs_null_neutral_split": 0.004975124378109453
+   },
+   "valence_neg": {
+    "nn16": 0.1115732192993164,
+    "nn25": 0.13114827871322632,
+    "signed25": 0.18493831157684326,
+    "signed100": 0.37911325693130493,
+    "tokens_nn16": [
+     [
+      " frustrating",
+      0.091
+     ],
+     [
+      " unable",
+      0.084
+     ],
+     [
+      "Failed",
+      0.074
+     ],
+     [
+      " enraged",
+      0.066
+     ],
+     [
+      " worse",
+      0.066
+     ],
+     [
+      " blamed",
+      0.066
+     ],
+     [
+      "!!!!",
+      0.066
+     ],
+     [
+      "\u5bfc\u81f4",
+      0.064
+     ],
+     [
+      " Anxiety",
+      0.064
+     ],
+     [
+      " timeouts",
+      0.062
+     ],
+     [
+      " tries",
+      0.062
+     ],
+     [
+      "\u5c1a",
+      0.062
+     ],
+     [
+      "\u6839\u672c",
+      0.061
+     ],
+     [
+      " AGAIN",
+      0.059
+     ],
+     [
+      " perseverance",
+      0.055
+     ],
+     [
+      " :(",
+      0.051
+     ]
+    ],
+    "tokens_most_aligned": [
+     " frustrating",
+     " unable",
+     " failed",
+     " frustrated",
+     " inability",
+     " frustration",
+     " fails",
+     " worse",
+     " cannot",
+     " refuses",
+     " refused",
+     " fail",
+     " infuri",
+     " blamed",
+     " trying"
+    ],
+    "p_nn16_vs_null_isotropic": 0.004975124378109453,
+    "p_nn25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed100_vs_null_isotropic": 0.004975124378109453,
+    "p_nn16_vs_null_neutral_split": 0.004975124378109453,
+    "p_nn25_vs_null_neutral_split": 0.004975124378109453,
+    "p_signed25_vs_null_neutral_split": 0.004975124378109453,
+    "p_signed100_vs_null_neutral_split": 0.004975124378109453
+   },
+   "null_isotropic": {
+    "nn16": {
+     "mean": 0.045545849949121475,
+     "median": 0.04540473222732544,
+     "p95": 0.0508229024708271,
+     "max": 0.052308619022369385
+    },
+    "nn25": {
+     "mean": 0.06086376681923866,
+     "median": 0.06066298484802246,
+     "p95": 0.06748876720666885,
+     "max": 0.06946885585784912
+    },
+    "signed25": {
+     "mean": 0.09135790914297104,
+     "median": 0.09117728471755981,
+     "p95": 0.0969860851764679,
+     "max": 0.10174036026000977
+    },
+    "signed100": {
+     "mean": 0.2778727412223816,
+     "median": 0.27796220779418945,
+     "p95": 0.28768643736839294,
+     "max": 0.2985207438468933
+    }
+   },
+   "null_neutral_split": {
+    "nn16": {
+     "mean": 0.06550352275371552,
+     "median": 0.06580090522766113,
+     "p95": 0.07687368988990784,
+     "max": 0.0837167501449585
+    },
+    "nn25": {
+     "mean": 0.08460560441017151,
+     "median": 0.084758460521698,
+     "p95": 0.098070427775383,
+     "max": 0.10747814178466797
+    },
+    "signed25": {
+     "mean": 0.1250734031200409,
+     "median": 0.12426751852035522,
+     "p95": 0.13871914148330688,
+     "max": 0.15183556079864502
+    },
+    "signed100": {
+     "mean": 0.32708194851875305,
+     "median": 0.32706135511398315,
+     "p95": 0.3446139097213745,
+     "max": 0.35736238956451416
+    }
+   },
+   "within_valence_contrasts": {
+    "nn16": {
+     "mean": 0.07733770459890366,
+     "median": 0.06913220882415771,
+     "p95": 0.09909286350011826,
+     "max": 0.10073208808898926
+    },
+    "nn25": {
+     "mean": 0.0963929072022438,
+     "median": 0.08745694160461426,
+     "p95": 0.1204163059592247,
+     "max": 0.12396931648254395
+    },
+    "signed25": {
+     "mean": 0.1378936916589737,
+     "median": 0.13514983654022217,
+     "p95": 0.15747854113578796,
+     "max": 0.1620779037475586
+    },
+    "signed100": {
+     "mean": 0.3261985778808594,
+     "median": 0.3185461759567261,
+     "p95": 0.35604286193847656,
+     "max": 0.36897218227386475
+    }
+   },
+   "emotions": {
+    "nn16": {
+     "mean": 0.11231298744678497,
+     "median": 0.11207109689712524,
+     "p95": 0.14072558283805847,
+     "max": 0.16025960445404053
+    },
+    "nn25": {
+     "mean": 0.13307112455368042,
+     "median": 0.13263428211212158,
+     "p95": 0.16360506415367126,
+     "max": 0.1817009449005127
+    },
+    "signed25": {
+     "mean": 0.197439044713974,
+     "median": 0.1966254711151123,
+     "p95": 0.23692861199378967,
+     "max": 0.2603628635406494
+    },
+    "signed100": {
+     "mean": 0.39006519317626953,
+     "median": 0.39103132486343384,
+     "p95": 0.42607611417770386,
+     "max": 0.4470582604408264
+    }
+   }
+  },
+  "rlens/L24": {
+   "valence_pos": {
+    "nn16": 0.06639528274536133,
+    "nn25": 0.08457791805267334,
+    "signed25": 0.1631801724433899,
+    "signed100": 0.3532620072364807,
+    "tokens_nn16": [
+     [
+      " satisfying",
+      0.078
+     ],
+     [
+      "\u8212",
+      0.07
+     ],
+     [
+      " sunlight",
+      0.07
+     ],
+     [
+      " flavors",
+      0.068
+     ],
+     [
+      " sessiz",
+      0.062
+     ],
+     [
+      " Into",
+      0.062
+     ],
+     [
+      " slide",
+      0.058
+     ],
+     [
+      "(~",
+      0.056
+     ],
+     [
+      "Street",
+      0.056
+     ],
+     [
+      "\u4e00\u4e0b",
+      0.055
+     ],
+     [
+      " taxonomy",
+      0.055
+     ],
+     [
+      " brightness",
+      0.054
+     ],
+     [
+      " \uc2b9",
+      0.053
+     ],
+     [
+      "inished",
+      0.052
+     ],
+     [
+      " \uc815\uaddc",
+      0.052
+     ],
+     [
+      "\u3093\u3068",
+      0.05
+     ]
+    ],
+    "tokens_most_aligned": [
+     " sunlight",
+     " satisfying",
+     "\u8212",
+     " sessiz",
+     " brightness",
+     " satisfied",
+     " \uc2b9",
+     " Satisfaction",
+     "i\u0434",
+     " pleasantly",
+     " pleasant",
+     " d\u00e0ng",
+     " flavors",
+     "inished",
+     " grayscale"
+    ],
+    "p_nn16_vs_null_isotropic": 0.004975124378109453,
+    "p_nn25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed100_vs_null_isotropic": 0.004975124378109453,
+    "p_nn16_vs_null_neutral_split": 0.20398009950248755,
+    "p_nn25_vs_null_neutral_split": 0.22388059701492538,
+    "p_signed25_vs_null_neutral_split": 0.004975124378109453,
+    "p_signed100_vs_null_neutral_split": 0.004975124378109453
+   },
+   "valence_neg": {
+    "nn16": 0.0968288779258728,
+    "nn25": 0.11613404750823975,
+    "signed25": 0.1631801724433899,
+    "signed100": 0.3532620072364807,
+    "tokens_nn16": [
+     [
+      " frustrating",
+      0.095
+     ],
+     [
+      " anxiety",
+      0.085
+     ],
+     [
+      " attempts",
+      0.074
+     ],
+     [
+      " worse",
+      0.073
+     ],
+     [
+      "\u65e0\u6cd5",
+      0.073
+     ],
+     [
+      " blaming",
+      0.065
+     ],
+     [
+      " AGAIN",
+      0.061
+     ],
+     [
+      " enraged",
+      0.061
+     ],
+     [
+      "!!!!",
+      0.06
+     ],
+     [
+      " stuck",
+      0.059
+     ],
+     [
+      "\u4e09",
+      0.056
+     ],
+     [
+      " hyster",
+      0.056
+     ],
+     [
+      " timeouts",
+      0.055
+     ],
+     [
+      "\u6839\u672c",
+      0.055
+     ],
+     [
+      " WhatsApp",
+      0.055
+     ],
+     [
+      " errorCallback",
+      0.05
+     ]
+    ],
+    "tokens_most_aligned": [
+     " frustrating",
+     " frustrated",
+     " unable",
+     " frustration",
+     " failed",
+     " worse",
+     " attempting",
+     " inability",
+     " trying",
+     " cannot",
+     " refused",
+     " anxiety",
+     " infuri",
+     " attempts",
+     " refuses"
+    ],
+    "p_nn16_vs_null_isotropic": 0.004975124378109453,
+    "p_nn25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed100_vs_null_isotropic": 0.004975124378109453,
+    "p_nn16_vs_null_neutral_split": 0.004975124378109453,
+    "p_nn25_vs_null_neutral_split": 0.004975124378109453,
+    "p_signed25_vs_null_neutral_split": 0.004975124378109453,
+    "p_signed100_vs_null_neutral_split": 0.004975124378109453
+   },
+   "null_isotropic": {
+    "nn16": {
+     "mean": 0.04584144055843353,
+     "median": 0.045516908168792725,
+     "p95": 0.051790062338113785,
+     "max": 0.05634838342666626
+    },
+    "nn25": {
+     "mean": 0.06139202043414116,
+     "median": 0.06109386682510376,
+     "p95": 0.06825882196426392,
+     "max": 0.07368087768554688
+    },
+    "signed25": {
+     "mean": 0.09182330965995789,
+     "median": 0.09190082550048828,
+     "p95": 0.09734850376844406,
+     "max": 0.09995317459106445
+    },
+    "signed100": {
+     "mean": 0.2804325819015503,
+     "median": 0.28033339977264404,
+     "p95": 0.2887168228626251,
+     "max": 0.29401785135269165
+    }
+   },
+   "null_neutral_split": {
+    "nn16": {
+     "mean": 0.06152559816837311,
+     "median": 0.06171727180480957,
+     "p95": 0.06990264356136322,
+     "max": 0.07353037595748901
+    },
+    "nn25": {
+     "mean": 0.07960599660873413,
+     "median": 0.07977783679962158,
+     "p95": 0.08915579319000244,
+     "max": 0.09387528896331787
+    },
+    "signed25": {
+     "mean": 0.12092293053865433,
+     "median": 0.12037664651870728,
+     "p95": 0.13284090161323547,
+     "max": 0.14193570613861084
+    },
+    "signed100": {
+     "mean": 0.3228580057621002,
+     "median": 0.32288146018981934,
+     "p95": 0.3391810953617096,
+     "max": 0.34913450479507446
+    }
+   },
+   "within_valence_contrasts": {
+    "nn16": {
+     "mean": 0.07227008044719696,
+     "median": 0.07104635238647461,
+     "p95": 0.09068294614553452,
+     "max": 0.09449267387390137
+    },
+    "nn25": {
+     "mean": 0.09043940156698227,
+     "median": 0.08920061588287354,
+     "p95": 0.1102544367313385,
+     "max": 0.11478036642074585
+    },
+    "signed25": {
+     "mean": 0.13117346167564392,
+     "median": 0.13266652822494507,
+     "p95": 0.14534051716327667,
+     "max": 0.14783543348312378
+    },
+    "signed100": {
+     "mean": 0.31645795702934265,
+     "median": 0.32013779878616333,
+     "p95": 0.33121514320373535,
+     "max": 0.33261507749557495
+    }
+   },
+   "emotions": {
+    "nn16": {
+     "mean": 0.11399225890636444,
+     "median": 0.11215949058532715,
+     "p95": 0.13922256231307983,
+     "max": 0.15549236536026
+    },
+    "nn25": {
+     "mean": 0.1345982402563095,
+     "median": 0.13328242301940918,
+     "p95": 0.1606183648109436,
+     "max": 0.17543244361877441
+    },
+    "signed25": {
+     "mean": 0.19611862301826477,
+     "median": 0.1963244080543518,
+     "p95": 0.22067201137542725,
+     "max": 0.2335679531097412
+    },
+    "signed100": {
+     "mean": 0.3890036344528198,
+     "median": 0.3896263837814331,
+     "p95": 0.41480278968811035,
+     "max": 0.42821264266967773
+    }
+   }
+  },
+  "rlens/L28": {
+   "valence_pos": {
+    "nn16": 0.06261640787124634,
+    "nn25": 0.07843774557113647,
+    "signed25": 0.16707223653793335,
+    "signed100": 0.3552454113960266,
+    "tokens_nn16": [
+     [
+      " sunlight",
+      0.067
+     ],
+     [
+      " flavors",
+      0.064
+     ],
+     [
+      " into",
+      0.063
+     ],
+     [
+      "\u8212",
+      0.063
+     ],
+     [
+      " satisfying",
+      0.059
+     ],
+     [
+      " sessiz",
+      0.058
+     ],
+     [
+      " accomplishments",
+      0.054
+     ],
+     [
+      "Expense",
+      0.053
+     ],
+     [
+      " slide",
+      0.052
+     ],
+     [
+      "i\u0434",
+      0.052
+     ],
+     [
+      " neat",
+      0.051
+     ],
+     [
+      " rgb",
+      0.049
+     ],
+     [
+      "\u0947\ufffd",
+      0.048
+     ],
+     [
+      "(content",
+      0.048
+     ],
+     [
+      " \uc2b9",
+      0.047
+     ],
+     [
+      " LICENSE",
+      0.046
+     ]
+    ],
+    "tokens_most_aligned": [
+     " satisfying",
+     " sunlight",
+     "\u8212",
+     " sessiz",
+     " flavors",
+     " satisfied",
+     " flavored",
+     " brightness",
+     "i\u0434",
+     " flavorful",
+     " into",
+     " pleasant",
+     " toward",
+     " flavor",
+     " tidy"
+    ],
+    "p_nn16_vs_null_isotropic": 0.004975124378109453,
+    "p_nn25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed100_vs_null_isotropic": 0.004975124378109453,
+    "p_nn16_vs_null_neutral_split": 0.1791044776119403,
+    "p_nn25_vs_null_neutral_split": 0.26865671641791045,
+    "p_signed25_vs_null_neutral_split": 0.004975124378109453,
+    "p_signed100_vs_null_neutral_split": 0.004975124378109453
+   },
+   "valence_neg": {
+    "nn16": 0.09409111738204956,
+    "nn25": 0.11061835289001465,
+    "signed25": 0.16707223653793335,
+    "signed100": 0.3552454113960266,
+    "tokens_nn16": [
+     [
+      " anxiety",
+      0.087
+     ],
+     [
+      " frustrating",
+      0.078
+     ],
+     [
+      " worse",
+      0.071
+     ],
+     [
+      " enraged",
+      0.068
+     ],
+     [
+      " attempting",
+      0.066
+     ],
+     [
+      " blamed",
+      0.064
+     ],
+     [
+      " AGAIN",
+      0.062
+     ],
+     [
+      "\u65e0\u6cd5",
+      0.061
+     ],
+     [
+      " stubborn",
+      0.06
+     ],
+     [
+      " Frozen",
+      0.056
+     ],
+     [
+      "\u6839\u672c",
+      0.056
+     ],
+     [
+      "?!",
+      0.053
+     ],
+     [
+      " disastrous",
+      0.052
+     ],
+     [
+      " failed",
+      0.052
+     ],
+     [
+      "\u5c1a",
+      0.05
+     ],
+     [
+      "\u5ef6",
+      0.048
+     ]
+    ],
+    "tokens_most_aligned": [
+     " frustrating",
+     " frustrated",
+     " worse",
+     " unable",
+     " frustration",
+     " refused",
+     " attempting",
+     " failed",
+     " trying",
+     " stubborn",
+     " desperately",
+     " infuri",
+     " refuses",
+     " anxiety",
+     " cannot"
+    ],
+    "p_nn16_vs_null_isotropic": 0.004975124378109453,
+    "p_nn25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed25_vs_null_isotropic": 0.004975124378109453,
+    "p_signed100_vs_null_isotropic": 0.004975124378109453,
+    "p_nn16_vs_null_neutral_split": 0.004975124378109453,
+    "p_nn25_vs_null_neutral_split": 0.004975124378109453,
+    "p_signed25_vs_null_neutral_split": 0.004975124378109453,
+    "p_signed100_vs_null_neutral_split": 0.004975124378109453
+   },
+   "null_isotropic": {
+    "nn16": {
+     "mean": 0.045526742935180664,
+     "median": 0.04554891586303711,
+     "p95": 0.05091211199760437,
+     "max": 0.05683302879333496
+    },
+    "nn25": {
+     "mean": 0.060311757028102875,
+     "median": 0.06043398380279541,
+     "p95": 0.06749069690704346,
+     "max": 0.07413703203201294
+    },
+    "signed25": {
+     "mean": 0.09248388558626175,
+     "median": 0.09243935346603394,
+     "p95": 0.09731853753328323,
+     "max": 0.10016798973083496
+    },
+    "signed100": {
+     "mean": 0.2848050594329834,
+     "median": 0.28449583053588867,
+     "p95": 0.2929292619228363,
+     "max": 0.2976047396659851
+    }
+   },
+   "null_neutral_split": {
+    "nn16": {
+     "mean": 0.05749402195215225,
+     "median": 0.05721241235733032,
+     "p95": 0.0662573054432869,
+     "max": 0.08164185285568237
+    },
+    "nn25": {
+     "mean": 0.07370505481958389,
+     "median": 0.0734815001487732,
+     "p95": 0.0834629163146019,
+     "max": 0.10016757249832153
+    },
+    "signed25": {
+     "mean": 0.11735288798809052,
+     "median": 0.11642289161682129,
+     "p95": 0.1289486140012741,
+     "max": 0.1343311071395874
+    },
+    "signed100": {
+     "mean": 0.3209119141101837,
+     "median": 0.3200530409812927,
+     "p95": 0.33456647396087646,
+     "max": 0.3465881943702698
+    }
+   },
+   "within_valence_contrasts": {
+    "nn16": {
+     "mean": 0.07433595508337021,
+     "median": 0.0741201639175415,
+     "p95": 0.08658084273338318,
+     "max": 0.09028393030166626
+    },
+    "nn25": {
+     "mean": 0.09074565768241882,
+     "median": 0.09032273292541504,
+     "p95": 0.1031835600733757,
+     "max": 0.10769546031951904
+    },
+    "signed25": {
+     "mean": 0.13750813901424408,
+     "median": 0.14105337858200073,
+     "p95": 0.15199191868305206,
+     "max": 0.1533116102218628
+    },
+    "signed100": {
+     "mean": 0.32630544900894165,
+     "median": 0.33366233110427856,
+     "p95": 0.34440553188323975,
+     "max": 0.34740281105041504
+    }
+   },
+   "emotions": {
+    "nn16": {
+     "mean": 0.10971623659133911,
+     "median": 0.10994982719421387,
+     "p95": 0.13310709595680237,
+     "max": 0.143172025680542
+    },
+    "nn25": {
+     "mean": 0.12821966409683228,
+     "median": 0.12894928455352783,
+     "p95": 0.15227162837982178,
+     "max": 0.16328132152557373
+    },
+    "signed25": {
+     "mean": 0.1947527676820755,
+     "median": 0.19434213638305664,
+     "p95": 0.21632930636405945,
+     "max": 0.23428821563720703
+    },
+    "signed100": {
+     "mean": 0.3930187523365021,
+     "median": 0.3952662944793701,
+     "p95": 0.4144405722618103,
+     "max": 0.42939651012420654
+    }
+   }
+  }
+ }
+}

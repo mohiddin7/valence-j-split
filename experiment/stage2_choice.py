@@ -119,15 +119,15 @@ def label_logprob(hf, last_hidden, spans):
 # Step 1: transcripts (no steering)
 
 @app.function(image=image, gpu="L40S", secrets=[HF_SECRET], volumes={"/cache": cache}, timeout=3600)
-def gen_transcripts(system: str = "", n: int = N_SESSIONS, name: str = "transcripts.json") -> list:
+def gen_transcripts(system: str = "", n: int = N_SESSIONS, name: str = "transcripts.json", start: int = 0) -> list:
     import os
 
     import torch
 
-    torch.manual_seed(SEED)
+    torch.manual_seed(SEED + start)
     tok, hf = load_model()
     tok.padding_side = "left"
-    sessions = make_sessions()[:n]
+    sessions = make_sessions()[start:n]
     for s in sessions:
         s["replies"] = []
         if system:
@@ -158,10 +158,13 @@ DISCLAIMER = r"not aware|don't have|do not have|I'm a |I am a |language model|as
 
 
 @app.local_entrypoint()
-def transcripts(incharacter: bool = False):
+def transcripts(incharacter: bool = False, held: bool = False):
     import re
 
-    if incharacter:
+    if incharacter and held:  # session plans 101 to 300, for the confirmatory run
+        sessions = gen_transcripts.remote(SYSTEM, 300, "transcripts_incharacter_held.json", 100)
+        (HERE / "results" / "stage2_transcripts_incharacter_held.json").write_text(json.dumps(sessions, indent=1))
+    elif incharacter:
         sessions = gen_transcripts.remote(SYSTEM, 100, "transcripts_incharacter.json")
         (HERE / "results" / "stage2_transcripts_incharacter.json").write_text(json.dumps(sessions, indent=1))
     else:

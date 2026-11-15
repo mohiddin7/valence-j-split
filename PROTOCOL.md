@@ -167,6 +167,27 @@ The system prompt of the second set is: "This is an imaginative exercise. Answer
 
 **Reading the result.** I report the slope for each choice order and their mean, never one order alone. The sign-independent drop counts as specific to valence only if it exceeds the drop of every neutral principal component and every random direction on the same tokens. This pilot is exploratory: it decides where a confirmatory run would steer, and it does not reopen the gate.
 
+## 9c. Confirmatory run for the early layers (written 2026-11-15, before it ran)
+
+**What the second pilot showed.** Steering only the conditioned zone's replies gave the paper's direction at layers 9, 11 and 12 (sign-dependent effect +0.94, +0.48 and +0.68 per unit dose), nothing at layer 16 (−0.005), and the opposite sign at layers 20 and 24. Against 8 random directions the valence vector ranked first at layers 9 and 12 and fifth at layer 11. I chose layers 9 and 12 after seeing those numbers, so they need a test on sessions that no steering run has used.
+
+**Why the layer may differ from the paper's.** Information moves between token positions only through attention. With no steering, from layer 11 on the reply tokens carry under 1% of the gradient of the choice: by then their content has been copied to other positions. A vector added to the replies after that point cannot reach the choice; one added before it can. My vector, corpus and transcripts are also not the authors'.
+
+**Design.** Session plans 101 to 300 (200 sessions), which the gradient map and both pilots did not use; the gate used them only with all-token steering at layer 16. Each session is read under both choice orders. Steering on the conditioned zone's reply tokens only, at layer 9 and at layer 12. Directions: the valence vector at doses −1, −0.5, +0.5 and +1; 24 random directions and the top 10 neutral principal components at −1 and +1. The whole model runs in float32. Code: `experiment/stage2_confirm.py`.
+
+**Sets.** Primary: the first transcript set (the paper's prompt). Secondary: the in-character variant, regenerated for the same 200 plans.
+
+**Criterion, per layer.** The sign-dependent effect of the valence vector at doses ±1, which is (change at +1 minus change at −1) / 2, must have a bootstrap 95% interval above zero in each choice order, and its mean over the two orders must be larger than the absolute value of the same quantity for each of the 24 random directions. With 24 random directions a pass at one layer has p ≤ 0.04; I test two layers and report both.
+
+**Secondary reading.** The sign-independent drop counts as specific to valence only if its interval lies below the drop of all 34 controls.
+
+**If it passes,** the original question returns at that layer: which part of the vector, lens-readable or remainder, carries the effect. That needs a new stage 1 at that layer first. **If it fails,** I report that my rebuild does not reproduce the paper's effect at any layer I tried.
+
+**Exploratory, alongside, on the 100 pilot sessions** (no conclusion rests on these):
+
+- *Several layers at once.* The valence vector added on the replies at layers 9 and 12; 9, 11 and 12; and 9 to 12; at full dose per layer and with the dose split equally. To first order the effects should add.
+- *Natural scale.* A dose of 1 is 60% of the residual's length, far outside natural variation. For each session I measure how far the two zones' replies already differ along the valence direction, then swap that amount between the zones, or remove it. If the model uses this direction in ordinary operation, swapping should move the choice toward the other zone at layers 9 and 12. Controls: neutral principal components and random directions, treated the same way.
+
 ## 10. What stage 1 found, and what it changes
 
 Results are in `experiment/results/`. Summary at layer 16, Jacobian lens, 16 tokens:
